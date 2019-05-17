@@ -218,11 +218,6 @@ body{
         align-items: center;
     }
 
-    .cell{
-        width: 100%;
-        display: block;
-    }
-
     #timeline-cell{
         display: flex !important;
         flex-direction: row;
