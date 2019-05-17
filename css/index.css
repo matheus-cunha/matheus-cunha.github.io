@@ -224,6 +224,11 @@ body{
         margin: 0rem 0 0rem 0;
     }
 
+    .cell{
+        width: 100%;
+        /* display: block; */
+    }
+
     .row{
         flex-direction: column !important;
     }
