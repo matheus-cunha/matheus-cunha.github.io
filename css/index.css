@@ -31,8 +31,6 @@ body{
     flex-direction: column;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
-
 #market-row{
     height: 25rem; 
     display: flex;
@@ -71,8 +69,6 @@ body{
 #event-01{top: 20%;}
 #event-02{top: 65%;}
 
-/* ------------------------------------------------------------------------------------------------ */
-
 #contacts{
     min-width: 18rem;
     font-size: 1rem;
@@ -98,8 +94,6 @@ body{
     background-color: #bae9ff;
     transition: 0.3s;
 }
-
-/* ------------------------------------------------------------------------------------------------ */
 
 #experience {
     height: 30rem;
@@ -137,8 +131,6 @@ body{
 #e-event-03{top: 59%;}
 #e-event-04{top: 79%;}
 
-/* ------------------------------------------------------------------------------------------------ */
-
 #sidebox{
     min-width: 18rem;
     font-size: 1rem;
@@ -155,7 +147,6 @@ body{
     line-height: 5rem;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
 .adc{
     display: flex;
     flex-direction: column;
@@ -182,15 +173,47 @@ body{
     background-size: contain;
 }
 
-
-
-
-
-
 @media only screen and (max-width: 1200px) {
     #main-table{
         padding: 7rem 3rem 3rem 3rem;
     }
+
+    #market-row .timeline-event{
+        height: 1.1rem;
+        width: 1.1rem;
+    }
+    
+    #event-01{top: 20%;}
+    #event-02{top: 52%;}
+    
+    #market-row .timeline-body{
+        height: 18rem;
+        width: 0.15rem;
+        background-color: #001133;
+    }
+
+    #experience .timeline-body{
+        height: 30rem;
+        width: 0.15rem;
+    }
+    
+    #experience .timeline-event{
+        height: 1.5rem;
+        width: 1.5rem; 
+    }
+    
+    #e-event-01{top: 12%;}
+    #e-event-02{top: 31%;}
+    #e-event-03{top: 47%;}
+    #e-event-04{top: 69%;}
+    
+    
+
+    /* #contacts a{
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    } */
 }
 
 @media only screen and (max-width: 900px) {
@@ -329,24 +352,188 @@ body{
         width: 100%;
         height: 4rem;
     }
+
+    #contacts{
+        width: 100%;
+        min-width: 18rem;
+        font-size: 0.8rem;
+        /* height: 18rem; */
+    }
+
+    #contacts i{
+        font-size: 1.5rem;    
+        margin: 0rem 0.3rem 0rem 1rem;
+    }
+
+    #contacts .fa-envelope{
+        font-size: 1.4rem;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
     #main-table{
-        padding: 12rem 2rem 2rem 2rem;
+        padding: 12rem 1.5rem 1.5rem 1.5rem;
     }
 
     body{
         height: 140rem;
+        background-color: #001133;
     }
     
     .body-content{
         width: 90%;
         height: 137rem;
     }
+
+    #contacts{
+        min-width: 5rem;
+        /* font-size: 1rem;
+        height: 18rem; */
+    }
+
+    #sidebox{
+        min-width: 5rem;
+        /* font-size: 1rem;
+        height: 18rem;
+        padding: 0rem 0.3rem 0rem 0.6rem;
+        margin-left: 1rem; */
+    }
+    
+/*
+    #summary{
+        text-align:center;
+        flex-direction: column;
+    }
+    
+    #market-row{
+        height: 25rem; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #market-row .content{
+        display: flex;
+        width: 90%;
+        height: 18rem; 
+    }
+    
+    #market-row .timeline{
+        height: 18rem;
+    }
+    
+    #market-row .timeline-body{
+        height: 18rem;
+        width: 0.2rem;
+        background-color: #001133;
+    }
+    
+    #market-row .timeline-event{
+        height: 1.15rem;
+        width: 1.15rem;
+        border-radius: 50%;
+        background-color: #001133;
+        border-style: solid;
+        border-color: #def9ff;
+        position: absolute; 
+        transform: translateX(-40%);    
+    }
+    
+    #event-01{top: 20%;}
+    #event-02{top: 65%;}
     
 
+    
+    #contacts i{
+        font-size: 2rem;    
+        margin: 0rem 0.3rem 0rem 0.6rem;
+    }
+    
+    #contacts .fa-envelope{
+        font-size: 1.8rem;
+    }
+    
+    #contacts a{
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #contacts li:hover{
+        background-color: #bae9ff;
+        transition: 0.3s;
+    }
+    
+    #experience {
+        height: 30rem;
+    }
+    
+    #experience .timeline-body{
+        height: 30rem;
+        width: 0.2rem;
+        background-color: #001133;
+    }
+    
+    #experience .content{
+        display: flex;
+        width: 90%;
+        height: 30rem; 
+    }
+    
+    #experience .timeline{
+        height: 30rem;
+    }
+    
+    #experience .timeline-event{
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        background-color: #def9ff;
+        position: absolute; 
+        transform: translateX(-40%);    
+    }
+    
+    #e-event-01{top: 12%;}
+    #e-event-02{top: 35%;}
+    #e-event-03{top: 59%;}
+    #e-event-04{top: 79%;}
+    
+
+    #sidebox li{
+        height: 2rem;
+    }
+    
+    #sidebox br{
+        line-height: 5rem;
+    }
+    
+    .adc{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .adc .cell{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .adc .row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-bottom: 1rem ;
+    }
+    
+    .shields{
+        background-image: url(../img/Prancheta\ 10.png);
+        width: 100%;
+        height: 5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
 }
-
-
-
