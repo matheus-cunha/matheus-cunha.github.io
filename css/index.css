@@ -18,7 +18,6 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
     border-radius: 50px;
 }
 
@@ -372,17 +371,16 @@ body{
 
 @media only screen and (max-width: 450px) {
     #main-table{
-        padding: 12rem 1.5rem 1.5rem 1.5rem;
+        padding: 9rem 1.5rem 1.5rem 1.5rem;
     }
 
     body{
-        height: 140rem;
-        background-color: #001133;
+        height: 150rem;
     }
     
     .body-content{
         width: 90%;
-        height: 137rem;
+        height: 148.5rem;
     }
 
     #contacts{
@@ -393,147 +391,69 @@ body{
 
     #sidebox{
         min-width: 5rem;
-        /* font-size: 1rem;
-        height: 18rem;
-        padding: 0rem 0.3rem 0rem 0.6rem;
-        margin-left: 1rem; */
     }
-    
-/*
-    #summary{
-        text-align:center;
-        flex-direction: column;
-    }
-    
+
     #market-row{
-        height: 25rem; 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #market-row .content{
-        display: flex;
-        width: 90%;
-        height: 18rem; 
-    }
-    
-    #market-row .timeline{
-        height: 18rem;
+       margin-top: 6rem;
+       height: 40rem;
     }
     
     #market-row .timeline-body{
-        height: 18rem;
-        width: 0.2rem;
-        background-color: #001133;
+        height: 20rem;
+        width: 0.08rem;
     }
-    
-    #market-row .timeline-event{
-        height: 1.15rem;
-        width: 1.15rem;
-        border-radius: 50%;
-        background-color: #001133;
-        border-style: solid;
-        border-color: #def9ff;
-        position: absolute; 
-        transform: translateX(-40%);    
-    }
-    
-    #event-01{top: 20%;}
-    #event-02{top: 65%;}
-    
 
-    
-    #contacts i{
-        font-size: 2rem;    
-        margin: 0rem 0.3rem 0rem 0.6rem;
+    #market-row .timeline-event{
+        height: 0.9rem;
+        width: 0.9rem;
+        transform: translateX(-45%);    
     }
-    
-    #contacts .fa-envelope{
-        font-size: 1.8rem;
+
+    #event-01{top: 20%;}
+    #event-02{top: 75%;}
+
+    #contacts{
+        min-width: 3rem;
+        height: 20rem;
+        margin-top: 4rem;
     }
-    
-    #contacts a{
-        height: 3rem;
-        display: flex;
-        flex-direction: row;
+
+    #market-row .timeline{
+        height: 18rem;
+        width: 0.3rem !important;
+        min-width: 0.1rem !important;
+        margin-right: 0.3rem;
     }
-    
-    #contacts li:hover{
-        background-color: #bae9ff;
-        transition: 0.3s;
-    }
-    
+
     #experience {
+        margin: 1rem 0 0 0 !important;
         height: 30rem;
     }
-    
-    #experience .timeline-body{
-        height: 30rem;
-        width: 0.2rem;
-        background-color: #001133;
-    }
-    
-    #experience .content{
-        display: flex;
-        width: 90%;
-        height: 30rem; 
-    }
-    
+
     #experience .timeline{
         height: 30rem;
+        width: 1rem !important;
+        min-width: 0.1rem !important;
+        margin-right: 0.3rem;
     }
-    
-    #experience .timeline-event{
-        height: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 1.5rem;
-        background-color: #def9ff;
-        position: absolute; 
-        transform: translateX(-40%);    
-    }
-    
-    #e-event-01{top: 12%;}
-    #e-event-02{top: 35%;}
-    #e-event-03{top: 59%;}
-    #e-event-04{top: 79%;}
-    
 
-    #sidebox li{
-        height: 2rem;
+    #experience .timeline-event{
+        height: 1.2rem;
+        width: 1.5rem;
+        font-size: 0.7rem;
     }
-    
-    #sidebox br{
-        line-height: 5rem;
+
+    #experience .timeline-body{
+        height: 27rem;
     }
-    
-    .adc{
-        display: flex;
-        flex-direction: column;
+  
+    #e-event-01{top: 11%;}
+    #e-event-02{top: 34%;}
+    #e-event-03{top: 53%;}
+    #e-event-04{top: 73%;}
+
+    #sidebox{
+        height: 15rem;
     }
-    
-    .adc .cell{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .adc .row{
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        margin-bottom: 1rem ;
-    }
-    
-    .shields{
-        background-image: url(../img/Prancheta\ 10.png);
-        width: 100%;
-        height: 5rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    
+
 }
