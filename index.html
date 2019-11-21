@@ -2,42 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="shortcut icon" href="./imgs/Branding/favicon.png" type="image/x-icon">
     <script src="js/dropdown.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Matheus Cunha</title>
 </head>
 <body>
     <nav>
         <div class="ribbon"></div>
         <div class="navbar">
-            <div class="branding"></div>
-            <div class="space-between"></div>
-            <button href="" class="nav-button">Início</button>
-            <div class="dropdown">
-                <button class="dropbtn nav-button" onclick="DropdownFunction()">
-                    Projetos
-                    <i class="fa fa-caret-down"></i>
-                </button>                    
-                <div class="dropdown-content" id="NavDropdown">
-                    <div class="wrap">
-                        <a href="#">Desenvolvimento Web</a>
-                        <a href="#">Design Gráfico</a>
+            <div class="navbar-content">
+                <div class="branding"></div>
+                <div class="space-between"></div>
+
+                <button href="" class="nav-button resp">Início</button>
+                <div class="dropdown resp">
+                    <button class="dropbtn nav-button" onclick="DropdownFunction()">
+                        Projetos
+                        <i class="fa fa-caret-down"></i>
+                    </button>                    
+                    <div class="dropdown-content" id="NavDropdown">
+                        <div class="wrap">
+                            <a href="#" class="">Desenvolvimento Web</a>
+                            <a href="#" class="dropdown-active">Design Gráfico</a>
+                        </div>
                     </div>
+                </div>   
+                <button href="" class="nav-button resp">Sobre</button>
+
+                <div class="responsive-menu">
+                    <a href=""><i class="fas fa-bars"></i></a>
                 </div>
-            </div>   
-            <button href="" class="nav-button">Sobre</button>
+            </div>
         </div>
         <div class="ribbon"></div>
-    </nav>
-
-
-    <!-- <svg height="300" width="500">
-        <path d="M 350 50 L 400 0 Q 400 0 450 50 C 500 50 450 50 700 50 C 700 50 750 50 750 100 C 750 250 750 300 750 550 C 750 600 700 600 700 600 L 100 600 C 50 600 50 550 50 550 C 50 300 50 300 50 100 C 50 50 100 50 100 50 Z"></path>
-    </svg> -->
-
-    
+    </nav>    
 </body>
 </html>
