@@ -16,3 +16,17 @@ body{
 a{
     text-decoration: none !important;
 }
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.bold{
+    font-weight: bolder;
+}
