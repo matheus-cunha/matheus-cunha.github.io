@@ -7,133 +7,349 @@
 }
 
 body{
-    background-color: #6b6bff;
     width: 100%;
-    height: 100vh;
-    color: #181874;
     font-family: 'Roboto', sans-serif;
-}
-
-.background-white-color{
-    position: absolute;
-    transform: translateY(-100%);
-    top: 100%;
-    width: 100%;
-    height: 35vh;
-    content: '';
-    background-color: #e5e5e5;
-    z-index: 1;
-}
-
-.body-content-wrapper{
-    z-index: 2;
-    padding: 2rem 5rem;
-    border-radius: 60px;
-    background-color: #fff;
-    box-shadow: 3px 3px 25px #181874b9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #e7e7e7;
+}
+
+section{
+    background-color: #ffffff;
+}
+
+/* SECTION HERO -----------------------------------------*/
+
+.section-hero{
+    height: 90vh;
+    margin: 0 0 3rem 0;
+    /* background-color: blueviolet; */
+}
+
+.section-hero-wrapper{
+    height: 90vh;
+    width: 1440px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content{
+    width: 950px;
+    transform: translateX(-15%);
+}
+
+.hero-name{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.section-hero h1{
+    font-size: 20px;
+}
+
+.section-hero h2{
+    font-size: 18px;
+    margin: 2rem 0;
+    font-weight: normal;
+}
+
+.hero-contact{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.box-title{
-    height: 9.5rem;
+/* BOTAO CONTATO -------------------------------------- */
+
+.hero-button{
+    margin: 0 1rem 0 1rem;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-h1{
-    font-size: 60px;
-    text-align: center;
-    cursor: default;
+.button-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.box-disclaimer{
+.hero-contact svg{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.button-anim{
+    margin-top: 5px;
+    width: 0;
+    height: 3px;
+    content: "";
+    transition: 0.6s;
+    background-color: transparent;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hero-button:hover:hover .button-anim{
+    margin-top: 5px;
     width: 100%;
-    height: 2rem;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 1rem;
+    background-color: white;
 }
 
-.box-progress-bar{
-    width: 19rem;
-    margin-bottom: 1rem;
+.hero-button:hover{
+    color: white;
+    transition: 0.6s;
 }
 
-.progress-bar{
+.hero-button:hover svg{
+    fill: white;
+    transition: 0.6s;
+}
+
+#linkedin{
+    margin: 0 1rem 0 0;
+}
+
+/* GLOBAL ----------------------------------------- */
+
+.title{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.content{
+    font-size: 18px;
+    margin: 1rem 0 0 0;
+    font-weight: normal;
+}
+
+/* SECTION ABOUT ------------------------------------- */
+
+.section-about{
+    margin: 3rem 0;
+    /* background-color: aqua; */
+}
+
+.section-about-wrapper{
+    width: 1440px;
+    padding: 1.5rem;
+}
+
+/* SECTION PROJECTS ---------------------------------- */
+
+.section-projects{
+    margin: 3rem 0;
+    /* background-color: aqua; */
+}
+
+.section-projects-wrapper{
+    width: 1440px;
+    padding: 1.5rem;
+}
+
+.section-projects-wrapper{
+    width: 1440px;
+}
+
+.section-projects .project{
+    width: 100%;
+    height: 12rem;
     position: relative;
-    width: 100%;
-    height: 1.5rem;
-    background-color: #e6e6e6;
-    border-radius: 15px;
-    content: '';
+
+    /* REMOVER DEPOIS --------------------------- */
+    /* background-color: tomato;
+    border: solid; */
+
+    /* FALTA O BACKGROUND ------------------------- */
 }
 
-.progress{
-    background-color: #181874;
-    content: '';
-    height: 1.5rem;
-
-    /* PROGRESSÃO DA CONSTRUÇÃO */
-    border-radius: 15px 0 0 15px;
-    width: 10%;
+.section-projects .project-label{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
 }
 
-.box-progress-bar .label{
-    font-size: 20px;
+.section-projects .project-pri{
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.box-progress-bar .label .first{
-    float: left;
+.section-projects .project-sec{
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.box-progress-bar .label .last{
-    float: right;
+/* CONHECIMENTOS --------------------------------------*/
+
+.section-knoledge{
+    margin: 3rem 0;
+    /* background-color: aqua; */
 }
 
-.redes-sociais{
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
+.section-knoledge-wrapper{
+    width: 1440px;
+    padding: 1.5rem;
 }
 
-.redes-sociais-box{
+/* JOBS -------------------------------------------*/
+
+.section-jobs{
+    margin: 3rem 0;
+    /* background-color: aqua; */
+}
+
+.section-jobs-wrapper{
+    width: 1440px;
+    padding: 1.5rem;
+}
+
+/* TIMELINE ------------------------------------------ */
+
+.timeline{
     display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    position: relative;
 }
 
-.icon-border{
-    width: 3rem;
-    height: 3rem;
+.timeline-line{
+    height: 50rem;
+    width: 0.4rem;
+    background-color: #00000036;
+    content: "";
+    position: absolute;
+    left: 0.2rem;
+}
+
+.timeline-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-space{
+    margin: 1rem 0;
+}
+
+.timeline-dot{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
     border-radius: 50px;
-    border-style: solid;
-    margin: 1rem;
+    content: "";
+    background-color: rgb(41, 141, 255);
+}
+
+.timeline-label{
+    margin-left: 1.8rem;
+    width: 500px;
+    min-width: 300px;
+}
+
+.timeline-content{
+    margin: 0 0 0 1rem;
+}
+
+/* RODAPE --------------------------------------*/
+
+footer{
+    margin: 3rem 0 0 0;
+    font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 1.6rem;
+    background-color: blue;
+    width: 100%;
 }
 
-.fa-git{
-    font-size: 2rem;
+.footer-wrapper{
+    width: 1440px;
+    background-color: aqua;
 }
 
-.fa-pinterest-p{
-    font-size: 1.9rem;
+
+@media only screen and (min-width: 1800px){
+
 }
 
-.icon-border:hover{
-    color: #6b6bff;
-    transition: 0.3s;
-    box-shadow: 0px 8px 10px #0000004d;
-    transform: translateY(-10%);
+@media only screen and (min-width: 1600px){
+
 }
 
-.icon-border:active{
-    color: #1717ad;
-    box-shadow: 0px 8px 5px #0000004d;
-    transform: translateY(-3%);
+@media only screen and (max-width: 900px){    
+
+}
+
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (max-width: 400px){   
+    .section-hero{
+        height: 100vh;
+        margin: 0 0 3rem 0;
+    }
+    
+    .section-hero-wrapper{
+        height: 100vh;
+        width: 380px;
+    }
+    
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* .hero-column{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    
+    .section-about{
+        margin: 3rem 0;
+    }
+    
+    .section-about-wrapper{
+        width: 380px;
+    }
+    
+    .section-projects{
+        margin: 3rem 0;
+    }
+    
+    .section-projects-wrapper{
+        width: 380px;
+    }
+    
+    .section-knoledge{
+        margin: 3rem 0;
+    }
+    
+    .section-knoledge-wrapper{
+        width: 380px;
+    }
+    
+    footer{
+        margin: 3rem 0 0 0;
+    }
+    
+    .footer-wrapper{
+        width: 380px;
+    }
 }
