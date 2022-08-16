@@ -12,7 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e7e7e7;
+    background-color: #f3f3f3;
 }
 
 section{
@@ -24,7 +24,8 @@ section{
 .section-hero{
     height: 90vh;
     margin: 0 0 3rem 0;
-    /* background-color: blueviolet; */
+    background-color: rgb(156, 154, 255);
+    /* color: #fff; */
 }
 
 .section-hero-wrapper{
@@ -146,6 +147,12 @@ section{
     padding: 1.5rem;
 }
 
+.section-about .content{
+    margin-left: 1.8rem;
+    text-align: justify;
+    line-height: 25px;
+}
+
 /* SECTION PROJECTS ---------------------------------- */
 
 .section-projects{
@@ -166,12 +173,27 @@ section{
     width: 100%;
     height: 12rem;
     position: relative;
+    overflow: hidden;
+}
 
-    /* REMOVER DEPOIS --------------------------- */
-    /* background-color: tomato;
-    border: solid; */
+.project img{
+    /* ALINHAR PLACEHOLDER -----------------------*/
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* FIM ALINHAR PLACEHOLDER -----------------------*/
+}
 
-    /* FALTA O BACKGROUND ------------------------- */
+.project:hover img{
+    transition: 0.5s;
+    opacity: 80%;
+}
+
+.project:hover{
+    cursor: pointer;
+    background-color: black;
 }
 
 .section-projects .project-label{
@@ -256,11 +278,29 @@ section{
     margin-left: 1.8rem;
     width: 500px;
     min-width: 300px;
+    font-size: 14px;
 }
 
 .timeline-content{
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 2rem;
+    text-align: justify;
+    line-height: 25px;
 }
+
+.timeline-label-title{
+    margin: 0.4rem 0;
+    font-size: 17px;
+}
+
+.timeline-label-title p:first-child{
+    font-weight: bold;
+}
+
+.timeline-label-title p:last-child{
+    font-weight: bold;
+    font-size: 15px;
+}
+
 
 /* RODAPE --------------------------------------*/
 
@@ -278,7 +318,6 @@ footer{
     width: 1440px;
     background-color: aqua;
 }
-
 
 @media only screen and (min-width: 1800px){
 
@@ -353,3 +392,5 @@ footer{
         width: 380px;
     }
 }
+
+
