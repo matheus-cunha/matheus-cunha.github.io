@@ -285,6 +285,8 @@ section{
 
 .knoledge-column-title{
 
+    cursor: pointer;
+    user-select: none;
 }
 
 .knoledge-column-content{
@@ -301,6 +303,8 @@ section{
     color: black;
     height: auto;
     transition: 0.3s;
+    cursor: pointer;
+    user-select: none; /* Standard syntax */
     /* transition-delay: 5s;  */
 
     /* position: relative; */
