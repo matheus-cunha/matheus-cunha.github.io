@@ -9,10 +9,6 @@
 body{
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f3f3f3;
 }
 
 
@@ -21,17 +17,7 @@ body{
 
 
 
-/* RODAPE --------------------------------------*/
-
-footer{
-    margin: 3rem 0 0 0;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: blue;
-    width: 100%;
-}
+/* MEDIA QUERRY --------------------------------------*/
 
 @media only screen and (min-width: 1800px){
 }
