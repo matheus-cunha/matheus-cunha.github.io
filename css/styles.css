@@ -224,7 +224,6 @@ h1 p{
   background-position: 0 0;
   position: absolute;
   z-index: 3;
-  /* animation: slide 0s linear infinite; */
 }
 
 @keyframes slide {
@@ -240,6 +239,7 @@ h1 p{
   align-items: center;
   flex-direction: column;
   background-color: #CBEDFF;
+  padding: 0 0 2rem 0;
 }
 
 .projects-content{
@@ -247,20 +247,169 @@ h1 p{
   background-color: #CBEDFF;
 }
 
+.projects-title{
+  font-size: 25.5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.projects-title-line{
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background-color: #003552;
+  margin: .5rem 0;
+}
+
+/* .projects-table{} */
+
+.projects-row{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.projects-table .m{
+  margin: 0;
+}
+
+.projects-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  background-color: #51C0FC;
+  margin: 0 0 0 1rem;
+  height: 15rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px #003552;
+}
+
+#CardVistoAqui{
+  background: rgb(11,150,224);
+  background: 
+    /* center / cover repeat url(../img/Assets/Projects/Backdrop/1.svg), */
+    linear-gradient(180deg, rgba(11,150,224,1) 0%, rgba(0,53,82,1) 100%)
+    ;
+  /* background-blend-mode: screen;
+  mix-blend-mode: screen; */
+}
+
+#LogoCardVistoAqui{
+  background-image: url("../img/Assets/Projects/Branding/VistoAquiLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card{
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.card-logo{
+  width: 220px;
+  height: 5rem;
+}
+
+.card-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1;
+  bottom: 0;
+}
+
+.card-icon{
+  margin: 0 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#IconAngular{
+  background-image: url("../img/Assets/Projects/Languages/Angular.svg");  
+}
+
+#IconBootstrap{
+  background-image: url("../img/Assets/Projects/Languages/Bootstrap.svg");  
+}
+
+#IconCss{
+  background-image: url("../img/Assets/Projects/Languages/Css.svg");  
+}
+
+#IconHtml{
+  background-image: url("../img/Assets/Projects/Languages/Html.svg");  
+}
+
+#IconJs{
+  background-image: url("../img/Assets/Projects/Languages/Js.svg");  
+}
+
+#IconSass{
+  background-image: url("../img/Assets/Projects/Languages/Sass.svg");  
+}
 
 
+.card-overlay{
+  opacity: 0;
+  /* transition: 1s; */
+  position: absolute;
+  color: #E6F3FA;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #003552;
+  font-size: 22px;
+}
 
+.projects-item:hover{
+  cursor: default;
+  user-select: none;
+}
 
-/* font-size: 25.5px; */
+.projects-item:hover .card{
+  cursor: default;
+  user-select: none;
+  opacity: 0.5;
+  filter: blur(10px);
+  transition: 1s;
+  position: absolute;
+}
 
+.projects-item:hover .card-overlay{
+  opacity: 1;
+  transition: 1s;
+  position: relative;
+}
 
+.card-overlay p{
+  margin: 1rem 0;
+  font-weight: lighter;
+  font-size: 18px;
+  padding: 0 1rem;
+}
 
-
+.card-overlay .item-btn{
+  text-decoration: none;
+  font-size: 18px;
+  color: #E6F3FA;
+  border: #E6F3FA;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 0.3rem;
+  text-shadow: 1px 1px 3px #003552;
+}
 
 footer{
   width: 100%;
   padding: 2rem 0;
-  background-color: #AD6BFF;
+  background-color: #51C0FC;
   text-align: center;
   display: flex;
   align-items: center;
@@ -270,7 +419,7 @@ footer{
   font-weight: bold;
   background: rgb(11,150,224);
   background: linear-gradient(180deg, rgba(11,150,224,1) 0%, rgba(0,53,82,1) 100%);
-  cursor: default;
+  cursor: pointer;
   user-select: none;
 }  
 
