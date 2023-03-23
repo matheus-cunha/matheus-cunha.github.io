@@ -69,7 +69,7 @@ h1 p{
   display: flex;
 }
 
-#projects{margin: 0 1rem 0 1rem;}
+#ButtonProjects{margin: 0 1rem 0 1rem;}
 
 .button{
   font-size: 18px;
@@ -178,7 +178,64 @@ h1 p{
   transition-delay: 0.05s;
 }
 
+#projects{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.projects-content{
+  width: 1400px;
+}
 
+footer{
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #AD6BFF;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #E6F3FA;
+  font-weight: bold;
+  background: rgb(11,150,224);
+  background: linear-gradient(180deg, rgba(11,150,224,1) 0%, rgba(0,53,82,1) 100%);
+}  
+
+.footer-title{
+  font-size: 25.5px;
+}
+
+.footer-title p{
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+}
+
+.footer-item{
+  flex: 1;
+  margin: 1rem 0;
+}
+
+.footer-item svg{
+  height: 50px;
+  width: 100%;
+  fill: #E6F3FA;
+  margin: 0 0 1rem 0;
+}
+
+footer .markdown{
+  font-size: 13px;
+  opacity: 0.5;
+}
 
 /* 
 Branco Texto        -       #E6F3FA
