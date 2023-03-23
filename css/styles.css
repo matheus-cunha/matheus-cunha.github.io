@@ -7,19 +7,165 @@
 }
 
 body{
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #003552;
+}
+
+#hero{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-backdrop{    
+  width: 100%;
+  height: 100vh;
+
+  background: 
+    center / cover no-repeat url(../img/Assets/Hero/HeroTexture.jpg),
+    linear-gradient(135deg, rgba(81,192,252,1) 0%, rgba(203,237,255,1) 50%, rgba(173,107,255,1) 100%) 
+  ;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  position: absolute;
+}
+
+.hero-wrapper{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-name{
+  /* width: 60%; */
+  background-color: #E6F3FA;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  box-shadow: 3px 3px 3px #003552;
+}
+
+h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h1 p{
+  margin-top: 0.3rem;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.hero-buttons{
+  width: 100%;
+  margin: 0.5rem 0;
+  display: flex;
+}
+
+#projects{margin: 0 1rem 0 1rem;}
+
+.button{
+  font-size: 18px;
+  flex: 3;
+  background-color: #E6F3FA;
+  border-radius: 30px;
+  padding: .5rem;
+  text-decoration: none;
+  color: #003552;
+  box-shadow: 3px 3px 3px #003552;
+  
+}
+
+.button:hover{
+  background-color: #AD6BFF !important; 
+  color: #E6F3FA;
+  font-weight: bold;
+  transform: translateY(-20%);
+  box-shadow: 3px 10px 10px #003552;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+
+.hero-content{
+  width: 100%;
+  background-color: #E6F3FA;
+  border-radius: 30px;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 0.5rem 0;
+  box-shadow: 3px 3px 3px #003552;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-content-contact{
+  text-align: left;
+  line-height: 30px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.hero-content-contact::first-line{
+  font-weight: bold;
+  font-size: 18px;
 }
 
 
+.hero-content-about{
+  text-align: left;
+  flex: 3;
+}
 
+.hero-content-about h2{
+  font-size: 18px;
+  font-weight: lighter;
+}
 
+.hero-content .markdown{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  opacity: 0.5;
+}
 
+.hero-content-contact a{
+  text-decoration: none;
+  color: #003552;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-contact img{
+  height: 16px;
+  color: #003552;
+}
+
+/* 
+Branco Texto        -       #E6F3FA
+Preto Texto         -       #003552
+Tom Azul            -       #51C0FC
+Tom Azul Fundo      -       #0B96E0
+Tom Claro           -       #CBEDFF
+Tom Claro Fundo     -       #B1CCFA
+Tom Violeta         -       #AD6BFF
+Tom Violeta Fundo   -       #791AED
+*/
 
 
 /* MEDIA QUERRY --------------------------------------*/
 
-@media only screen and (min-width: 1800px){
+/* @media only screen and (min-width: 1800px){
 }
 
 @media only screen and (min-width: 1600px){
@@ -32,5 +178,4 @@ body{
 }
 
 @media only screen and (max-width: 400px){   
-}
-
+} */
