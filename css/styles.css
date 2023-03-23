@@ -50,11 +50,15 @@ body{
   padding: 1rem 2rem;
   margin: 0.5rem 0;
   box-shadow: 3px 3px 3px #003552;
+  cursor: default;
+  user-select: none;
 }
 
 h1{
   font-size: 32px;
   font-weight: bold;
+  cursor: default;
+  user-select: none;
 }
 
 h1 p{
@@ -94,6 +98,8 @@ h1 p{
 }
 
 .hero-content{
+  cursor: default;
+  user-select: none;
   width: 100%;
   background-color: #E6F3FA;
   border-radius: 30px;
@@ -178,6 +184,13 @@ h1 p{
   transition-delay: 0.05s;
 }
 
+
+
+
+
+
+
+
 #projects{
   width: 100%;
   text-align: center;
@@ -186,9 +199,50 @@ h1 p{
   flex-direction: column;
 }
   
+.projects-wave{
+
+}
+
+.wave-cyan{
+  width: 100%;
+  height: 2rem;
+  background-image: url("../img/Assets/Hero/WaveCyan.svg");
+  content: "";
+}
+
+.wave-violet{
+  width: 100%;
+  height: 2rem;
+  background-image: url("../img/Assets/Hero/WaveViolet.svg");
+  content: "";
+}
+
+.wave-heavenblue{
+  width: 100%; 
+  height: 2rem;
+  background-image: url("../img/Assets/Hero/WaveHeavenBlue.svg");
+  content: "";
+}
+
+
+
+
+
+
+
+
 .projects-content{
   width: 1400px;
 }
+
+
+
+
+
+
+
+
+
 
 footer{
   width: 100%;
@@ -203,6 +257,8 @@ footer{
   font-weight: bold;
   background: rgb(11,150,224);
   background: linear-gradient(180deg, rgba(11,150,224,1) 0%, rgba(0,53,82,1) 100%);
+  cursor: default;
+  user-select: none;
 }  
 
 .footer-title{
