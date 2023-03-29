@@ -534,13 +534,597 @@ Tom Violeta Fundo   -       #791AED
 
 /* MEDIA QUERRY --------------------------------------*/
 
+@media only screen and (max-width: 1450px){
+  /* #projects{
+    width: 100%;
+    padding: 0 0 2rem 0;
+  } */
+  
+  .projects-content{
+    width: 900px;
+  }
+  
+  /* .projects-title{
+    font-size: 25.5px;
+  } */
+  
+  /* .projects-row{
+    margin: 1rem 0;
+  } */
+  
+  /* .projects-table .m{
+    margin: 0;
+  } */
+  
+  .projects-item{
+    height: 12rem;
+  }
+
+  .card-logo{
+    width: 170px;
+    max-width: 170px;
+    height: 7rem;
+  }
+  
+  /* .card-icon{
+    margin: 0 0.2rem;
+    width: 2rem;
+    height: 2rem;
+  } */
+  
+  .card-overlay{
+    font-size: 20px;
+    height: 12rem;
+  }
+  
+  .card-overlay p{
+    margin: .5rem 0 1.5rem 0;
+    font-size: 16px;
+    /* padding: 0 1rem; */
+  }
+  
+  .card-overlay .item-btn{
+    font-size: 16px;
+    /* padding: 0.3rem 0.8rem; */
+  }
+
+  /* footer{
+    padding: 2rem 0;
+  }   */
+  
+  .footer-title{
+    font-size: 24px;
+  }
+  
+  /* .footer-title p{
+    font-size: 16px;
+  } */
+  
+  .footer-content{
+    width: 900px;
+  }
+  
+  .footer-item{
+    margin: 1.5rem 0;
+    font-size: 16px;
+  }
+  
+  .footer-item svg{
+    height: 40px;
+    margin: 0 0 1rem 0;
+  }
+  
+  /* footer .markdown{
+    font-size: 13px;
+    opacity: 0.5;
+  } */
+}
+
+@media only screen and (max-width: 950px){    
+  .hero-wrapper{
+    width: 400px;
+  }
+
+  /* .hero-name{
+    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+  } */
+
+  h1{
+    font-size: 29px;
+  }
+
+  h1 p{
+    font-size: 18px;
+  }
+
+  /* .hero-buttons{
+    margin: 0.5rem 0;
+  } */
+
+  /* #ButtonProjects{margin: 0 1rem 0 1rem;} */
+
+  .button{
+    font-size: 16px;
+    /* padding: .5rem; */
+  }
+
+  /* .hero-content{
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0.5rem 0;
+  } */
+
+  /* .hero-content-contact{
+    line-height: 30px;
+    font-size: 16px;
+  } */
+
+  .hero-content-contact span{
+    font-size: 16px;
+  }
+
+  /* .hero-content-about{
+    margin: 0rem 1rem 0 1rem ;
+  } */
+
+  .hero-content-about span{
+    font-size: 16px;
+    /* line-height: 30px; */
+  }
+
+  .hero-content-about h2{
+    font-size: 16px;
+  }
+
+  /* .hero-content .markdown{
+    font-size: 13px;
+  } */
+
+  /* .hero-content-contact a{
+    padding: 0 1rem 0 1rem;
+  } */
+
+  .hero-content-contact svg{
+    height: 16px;
+    width: 16px;
+    /* margin-right: .3rem; */
+  }
+
+  /* #projects{
+    width: 100%;
+    padding: 0 0 2rem 0;
+  } */
+  
+  .projects-content{
+    width: 600px;
+  }
+  
+  /* .projects-title{
+    font-size: 25.5px;
+  } */
+  
+  .projects-row{
+    /* margin: 1rem 0; */
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* .projects-table .m{
+    margin: 0;
+  } */
+  
+  .projects-item{
+    height: 10rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+
+  .projects-table .m{
+    margin: 0 0 1rem 0;
+  }
+
+  .card-logo{
+    width: 170px;
+    max-width: 170px;
+    height: 4rem;
+  }
+  
+  .card-icon{
+    margin: 0 0.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  
+  .card-overlay{
+    font-size: 16px;
+    height: 10rem;
+  }
+  
+  .card-overlay p{
+    margin: .5rem 0 1rem 0;
+    font-size: 16px;
+    /* padding: 0 1rem; */
+  }
+  
+  .card-overlay .item-btn{
+    font-size: 16px;
+    /* padding: 0.3rem 0.8rem; */
+  }
+
+  /* footer{
+    padding: 2rem 0;
+  }   */
+  
+  .footer-title{
+    font-size: 24px;
+  }
+  
+  /* .footer-title p{
+    font-size: 16px;
+  } */
+  
+  .footer-content{
+    width: 600px;
+  }
+  
+  .footer-item{
+    margin: 1.5rem 0;
+    font-size: 14px;
+  }
+  
+  .footer-item svg{
+    height: 35px;
+    margin: 0 0 1rem 0;
+  }
+  
+  /* footer .markdown{
+    font-size: 13px;
+    opacity: 0.5;
+  } */
+}
+
+@media only screen and (max-width: 650px){    
+  .hero-wrapper{
+    width: 400px;
+  }
+
+  /* .hero-name{
+    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+  } */
+
+  h1{
+    font-size: 29px;
+  }
+
+  h1 p{
+    font-size: 18px;
+  }
+
+  /* .hero-buttons{
+    margin: 0.5rem 0;
+  } */
+
+  /* #ButtonProjects{margin: 0 1rem 0 1rem;} */
+
+  .button{
+    font-size: 16px;
+    /* padding: .5rem; */
+  }
+
+  /* .hero-content{
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0.5rem 0;
+  } */
+
+  /* .hero-content-contact{
+    line-height: 30px;
+    font-size: 16px;
+  } */
+
+  .hero-content-contact span{
+    font-size: 16px;
+  }
+
+  /* .hero-content-about{
+    margin: 0rem 1rem 0 1rem ;
+  } */
+
+  .hero-content-about span{
+    font-size: 16px;
+    /* line-height: 30px; */
+  }
+
+  .hero-content-about h2{
+    font-size: 16px;
+  }
+
+  /* .hero-content .markdown{
+    font-size: 13px;
+  } */
+
+  /* .hero-content-contact a{
+    padding: 0 1rem 0 1rem;
+  } */
+
+  .hero-content-contact svg{
+    height: 16px;
+    width: 16px;
+    /* margin-right: .3rem; */
+  }
+
+  /* #projects{
+    width: 100%;
+    padding: 0 0 2rem 0;
+  } */
+  
+  .projects-content{
+    width: 400px;
+  }
+  
+  /* .projects-title{
+    font-size: 25.5px;
+  } */
+  
+  .projects-row{
+    /* margin: 1rem 0; */
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* .projects-table .m{
+    margin: 0;
+  } */
+  
+  .projects-item{
+    height: 10rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+
+  .projects-table .m{
+    margin: 0 0 1rem 0;
+  }
+
+  .card-logo{
+    width: 170px;
+    max-width: 170px;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-icon{
+    margin: 0 0.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .card-overlay{
+    font-size: 16px;
+    height: 10rem;
+  }
+  
+  .card-overlay p{
+    margin: .5rem 0 1rem 0;
+    font-size: 16px;
+    /* padding: 0 1rem; */
+  }
+  
+  .card-overlay .item-btn{
+    font-size: 16px;
+    /* padding: 0.3rem 0.8rem; */
+  }
+
+  /* footer{
+    padding: 2rem 0;
+  }   */
+  
+  .footer-title{
+    font-size: 24px;
+  }
+  
+  /* .footer-title p{
+    font-size: 16px;
+  } */
+  
+  .footer-content{
+    width: 600px;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .footer-item{
+    margin: 1.5rem 0;
+    font-size: 14px;
+  }
+  
+  .footer-item svg{
+    height: 35px;
+    margin: 0 0 1rem 0;
+  }
+  
+  /* footer .markdown{
+    font-size: 13px;
+    opacity: 0.5;
+  } */
+}
+
+@media only screen and (max-width: 420px){    
+  .hero-wrapper{
+    width: 300px;
+  }
+
+  .hero-name{
+    padding: .8rem 1.8rem;
+    /* margin: 0.5rem 0; */
+    width: 100%;
+  }
+
+  h1{
+    font-size: 26px;
+  }
+
+  h1 p{
+    font-size: 16px;
+  }
+
+  /* .hero-buttons{
+    margin: 0.5rem 0;
+  } */
+
+  /* #ButtonProjects{margin: 0 1rem 0 1rem;} */
+
+  .button{
+    font-size: 14px;
+    /* padding: .5rem; */
+  }
+
+  /* .hero-content{
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0.5rem 0;
+  } */
+
+  /* .hero-content-contact{
+    line-height: 30px;
+    font-size: 16px;
+  } */
+
+  .hero-content-contact span{
+    font-size: 14px;
+  }
+
+  /* .hero-content-about{
+    margin: 0rem 1rem 0 1rem ;
+  } */
+
+  .hero-content-about span{
+    font-size: 14px;
+    /* line-height: 30px; */
+  }
+
+  .hero-content-about h2{
+    font-size: 14px;
+  }
+
+  .hero-content .markdown{
+    font-size: 11px;
+  }
+
+  .hero-content-contact a{
+    font-size: 14px;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .hero-content-contact svg{
+    height: 14px;
+    width: 14px;
+    /* margin-right: .3rem; */
+  }
+
+  /* #projects{
+    width: 100%;
+    padding: 0 0 2rem 0;
+  } */
+  
+  .projects-content{
+    width: 300px;
+  }
+  
+  .projects-title{
+    font-size: 18px;
+  }
+  
+  .projects-row{
+    /* margin: 1rem 0; */
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* .projects-table .m{
+    margin: 0;
+  } */
+  
+  .projects-item{
+    height: 5rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+
+  .projects-table .m{
+    margin: 0 0 1rem 0;
+  }
+
+  .card-logo{
+    width: 170px;
+    max-width: 170px;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-icon{
+    margin: 0 0.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .card-overlay{
+    font-size: 16px;
+    height: 5rem;
+  }
+  
+  .card-overlay p{
+    margin: .5rem 0 1rem 0;
+    font-size: 16px;
+    /* padding: 0 1rem; */
+  }
+  
+  .card-overlay .item-btn{
+    font-size: 16px;
+    /* padding: 0.3rem 0.8rem; */
+  }
+
+  /* footer{
+    padding: 2rem 0;
+  }   */
+  
+  .footer-title{
+    font-size: 24px;
+  }
+  
+  /* .footer-title p{
+    font-size: 16px;
+  } */
+  
+  .footer-content{
+    width: 600px;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .footer-item{
+    margin: 1.5rem 0;
+    font-size: 14px;
+  }
+  
+  .footer-item svg{
+    height: 35px;
+    margin: 0 0 1rem 0;
+  }
+  
+  footer .markdown{
+    font-size: 11px;
+  }
+}
+
 /* @media only screen and (min-width: 1800px){
 }
 
 @media only screen and (min-width: 1600px){
-}
-
-@media only screen and (max-width: 900px){    
 }
 
 @media only screen and (max-width: 600px){
