@@ -186,7 +186,9 @@ h1 p{
   
 .projects-wave{
   position: relative;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .wave-violet{
@@ -667,6 +669,18 @@ Tom Violeta Fundo   -       #791AED
     height: 35px;
     margin: 0 0 1rem 0;
   }
+
+  .wave-violet{
+    animation: slide 30s ease-in infinite;
+  }
+  
+  .wave-cyan{
+    animation: slide 30s ease-out infinite;
+  }
+  
+  .wave-heavenblue{
+    animation: slide 50s ease infinite;
+  }
 }
 
 @media only screen and (max-width: 650px){    
@@ -876,7 +890,7 @@ Tom Violeta Fundo   -       #791AED
   }
     
   .footer-content{
-    width: 600px;
+    width: 300px;
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
@@ -894,6 +908,18 @@ Tom Violeta Fundo   -       #791AED
   
   footer .markdown{
     font-size: 11px;
+  }
+
+  .wave-violet{
+    animation: slide 15s ease-in infinite;
+  }
+  
+  .wave-cyan{
+    animation: slide 15s ease-out infinite;
+  }
+  
+  .wave-heavenblue{
+    animation: slide 50s ease infinite;
   }
 }
 
