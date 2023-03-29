@@ -85,7 +85,6 @@ h1 p{
   text-decoration: none;
   color: #003552;
   box-shadow: 3px 3px 3px #003552;
-  
 }
 
 .button:hover{
@@ -261,8 +260,6 @@ h1 p{
   margin: .5rem 0;
 }
 
-/* .projects-table{} */
-
 .projects-row{
   display: flex;
   flex-direction: row;
@@ -287,9 +284,6 @@ h1 p{
   box-shadow: 2px 2px 10px #003552;
   position: relative;
 }
-
-/* .card{
-} */
 
 .card-logo{
   width: 220px;
@@ -353,7 +347,6 @@ h1 p{
 
 .card-overlay{
   opacity: 0;
-  /* transition: 1s; */
   position: absolute;
   color: #E6F3FA;
   font-weight: bold;
@@ -389,11 +382,9 @@ h1 p{
   border-radius: 15px;
   padding: 0.3rem 0.8rem;
   text-shadow: 1px 1px 3px #003552;
-  /* width: 100%; */
 }
 
 /* ----------------------------logo dos cards projetos ----------------------------*/
-
 #Card-1-1{
   background: rgb(11,150,224);
   background: 
@@ -451,8 +442,6 @@ h1 p{
 }
 
 
-
-
 /* #Card-1-1{
   background: rgb(11,150,224);
   background: 
@@ -471,7 +460,6 @@ h1 p{
 } */
 
 /* ---------------------------- fim logo dos cards projetos ----------------------------*/
-
 footer{
   width: 100%;
   padding: 2rem 0;
@@ -534,28 +522,11 @@ Tom Violeta Fundo   -       #791AED
 
 /* MEDIA QUERRY --------------------------------------*/
 
-@media only screen and (max-width: 1450px){
-  /* #projects{
-    width: 100%;
-    padding: 0 0 2rem 0;
-  } */
-  
+@media only screen and (max-width: 1450px){  
   .projects-content{
     width: 900px;
   }
-  
-  /* .projects-title{
-    font-size: 25.5px;
-  } */
-  
-  /* .projects-row{
-    margin: 1rem 0;
-  } */
-  
-  /* .projects-table .m{
-    margin: 0;
-  } */
-  
+    
   .projects-item{
     height: 12rem;
   }
@@ -566,12 +537,6 @@ Tom Violeta Fundo   -       #791AED
     height: 7rem;
   }
   
-  /* .card-icon{
-    margin: 0 0.2rem;
-    width: 2rem;
-    height: 2rem;
-  } */
-  
   .card-overlay{
     font-size: 20px;
     height: 12rem;
@@ -580,25 +545,15 @@ Tom Violeta Fundo   -       #791AED
   .card-overlay p{
     margin: .5rem 0 1.5rem 0;
     font-size: 16px;
-    /* padding: 0 1rem; */
   }
   
   .card-overlay .item-btn{
     font-size: 16px;
-    /* padding: 0.3rem 0.8rem; */
   }
-
-  /* footer{
-    padding: 2rem 0;
-  }   */
   
   .footer-title{
     font-size: 24px;
   }
-  
-  /* .footer-title p{
-    font-size: 16px;
-  } */
   
   .footer-content{
     width: 900px;
@@ -613,22 +568,12 @@ Tom Violeta Fundo   -       #791AED
     height: 40px;
     margin: 0 0 1rem 0;
   }
-  
-  /* footer .markdown{
-    font-size: 13px;
-    opacity: 0.5;
-  } */
 }
 
 @media only screen and (max-width: 950px){    
   .hero-wrapper{
     width: 400px;
   }
-
-  /* .hero-name{
-    padding: 1rem 2rem;
-    margin: 0.5rem 0;
-  } */
 
   h1{
     font-size: 29px;
@@ -638,82 +583,37 @@ Tom Violeta Fundo   -       #791AED
     font-size: 18px;
   }
 
-  /* .hero-buttons{
-    margin: 0.5rem 0;
-  } */
-
-  /* #ButtonProjects{margin: 0 1rem 0 1rem;} */
-
   .button{
     font-size: 16px;
-    /* padding: .5rem; */
   }
-
-  /* .hero-content{
-    padding: 1rem 1rem 2rem 1rem;
-    margin: 0.5rem 0;
-  } */
-
-  /* .hero-content-contact{
-    line-height: 30px;
-    font-size: 16px;
-  } */
 
   .hero-content-contact span{
     font-size: 16px;
   }
 
-  /* .hero-content-about{
-    margin: 0rem 1rem 0 1rem ;
-  } */
-
   .hero-content-about span{
     font-size: 16px;
-    /* line-height: 30px; */
   }
 
   .hero-content-about h2{
     font-size: 16px;
   }
 
-  /* .hero-content .markdown{
-    font-size: 13px;
-  } */
-
-  /* .hero-content-contact a{
-    padding: 0 1rem 0 1rem;
-  } */
-
   .hero-content-contact svg{
     height: 16px;
     width: 16px;
-    /* margin-right: .3rem; */
   }
 
-  /* #projects{
-    width: 100%;
-    padding: 0 0 2rem 0;
-  } */
-  
   .projects-content{
     width: 600px;
   }
   
-  /* .projects-title{
-    font-size: 25.5px;
-  } */
-  
   .projects-row{
-    /* margin: 1rem 0; */
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
-  /* .projects-table .m{
-    margin: 0;
-  } */
-  
+    
   .projects-item{
     height: 10rem;
     margin: 1rem 0;
@@ -744,25 +644,15 @@ Tom Violeta Fundo   -       #791AED
   .card-overlay p{
     margin: .5rem 0 1rem 0;
     font-size: 16px;
-    /* padding: 0 1rem; */
   }
   
   .card-overlay .item-btn{
     font-size: 16px;
-    /* padding: 0.3rem 0.8rem; */
   }
-
-  /* footer{
-    padding: 2rem 0;
-  }   */
   
   .footer-title{
     font-size: 24px;
   }
-  
-  /* .footer-title p{
-    font-size: 16px;
-  } */
   
   .footer-content{
     width: 600px;
@@ -777,22 +667,12 @@ Tom Violeta Fundo   -       #791AED
     height: 35px;
     margin: 0 0 1rem 0;
   }
-  
-  /* footer .markdown{
-    font-size: 13px;
-    opacity: 0.5;
-  } */
 }
 
 @media only screen and (max-width: 650px){    
   .hero-wrapper{
     width: 400px;
   }
-
-  /* .hero-name{
-    padding: 1rem 2rem;
-    margin: 0.5rem 0;
-  } */
 
   h1{
     font-size: 29px;
@@ -802,82 +682,37 @@ Tom Violeta Fundo   -       #791AED
     font-size: 18px;
   }
 
-  /* .hero-buttons{
-    margin: 0.5rem 0;
-  } */
-
-  /* #ButtonProjects{margin: 0 1rem 0 1rem;} */
-
   .button{
     font-size: 16px;
-    /* padding: .5rem; */
   }
-
-  /* .hero-content{
-    padding: 1rem 1rem 2rem 1rem;
-    margin: 0.5rem 0;
-  } */
-
-  /* .hero-content-contact{
-    line-height: 30px;
-    font-size: 16px;
-  } */
 
   .hero-content-contact span{
     font-size: 16px;
   }
 
-  /* .hero-content-about{
-    margin: 0rem 1rem 0 1rem ;
-  } */
-
   .hero-content-about span{
     font-size: 16px;
-    /* line-height: 30px; */
   }
 
   .hero-content-about h2{
     font-size: 16px;
   }
 
-  /* .hero-content .markdown{
-    font-size: 13px;
-  } */
-
-  /* .hero-content-contact a{
-    padding: 0 1rem 0 1rem;
-  } */
-
   .hero-content-contact svg{
     height: 16px;
     width: 16px;
-    /* margin-right: .3rem; */
   }
-
-  /* #projects{
-    width: 100%;
-    padding: 0 0 2rem 0;
-  } */
   
   .projects-content{
     width: 400px;
   }
-  
-  /* .projects-title{
-    font-size: 25.5px;
-  } */
-  
+    
   .projects-row{
-    /* margin: 1rem 0; */
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
-  /* .projects-table .m{
-    margin: 0;
-  } */
-  
+
   .projects-item{
     height: 10rem;
     margin: 1rem 0;
@@ -909,26 +744,16 @@ Tom Violeta Fundo   -       #791AED
   .card-overlay p{
     margin: .5rem 0 1rem 0;
     font-size: 16px;
-    /* padding: 0 1rem; */
   }
   
   .card-overlay .item-btn{
     font-size: 16px;
-    /* padding: 0.3rem 0.8rem; */
   }
-
-  /* footer{
-    padding: 2rem 0;
-  }   */
   
   .footer-title{
     font-size: 24px;
   }
-  
-  /* .footer-title p{
-    font-size: 16px;
-  } */
-  
+    
   .footer-content{
     width: 600px;
     display: flex; 
@@ -945,11 +770,6 @@ Tom Violeta Fundo   -       #791AED
     height: 35px;
     margin: 0 0 1rem 0;
   }
-  
-  /* footer .markdown{
-    font-size: 13px;
-    opacity: 0.5;
-  } */
 }
 
 @media only screen and (max-width: 420px){    
@@ -959,7 +779,6 @@ Tom Violeta Fundo   -       #791AED
 
   .hero-name{
     padding: .8rem 1.8rem;
-    /* margin: 0.5rem 0; */
     width: 100%;
   }
 
@@ -971,38 +790,16 @@ Tom Violeta Fundo   -       #791AED
     font-size: 16px;
   }
 
-  /* .hero-buttons{
-    margin: 0.5rem 0;
-  } */
-
-  /* #ButtonProjects{margin: 0 1rem 0 1rem;} */
-
   .button{
     font-size: 14px;
-    /* padding: .5rem; */
   }
-
-  /* .hero-content{
-    padding: 1rem 1rem 2rem 1rem;
-    margin: 0.5rem 0;
-  } */
-
-  /* .hero-content-contact{
-    line-height: 30px;
-    font-size: 16px;
-  } */
 
   .hero-content-contact span{
     font-size: 14px;
   }
 
-  /* .hero-content-about{
-    margin: 0rem 1rem 0 1rem ;
-  } */
-
   .hero-content-about span{
     font-size: 14px;
-    /* line-height: 30px; */
   }
 
   .hero-content-about h2{
@@ -1021,13 +818,7 @@ Tom Violeta Fundo   -       #791AED
   .hero-content-contact svg{
     height: 14px;
     width: 14px;
-    /* margin-right: .3rem; */
   }
-
-  /* #projects{
-    width: 100%;
-    padding: 0 0 2rem 0;
-  } */
   
   .projects-content{
     width: 300px;
@@ -1038,16 +829,11 @@ Tom Violeta Fundo   -       #791AED
   }
   
   .projects-row{
-    /* margin: 1rem 0; */
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
-  /* .projects-table .m{
-    margin: 0;
-  } */
-  
+    
   .projects-item{
     height: 5rem;
     margin: 1rem 0;
@@ -1079,26 +865,16 @@ Tom Violeta Fundo   -       #791AED
   .card-overlay p{
     margin: .5rem 0 1rem 0;
     font-size: 16px;
-    /* padding: 0 1rem; */
   }
   
   .card-overlay .item-btn{
     font-size: 16px;
-    /* padding: 0.3rem 0.8rem; */
   }
-
-  /* footer{
-    padding: 2rem 0;
-  }   */
   
   .footer-title{
     font-size: 24px;
   }
-  
-  /* .footer-title p{
-    font-size: 16px;
-  } */
-  
+    
   .footer-content{
     width: 600px;
     display: flex; 
@@ -1121,14 +897,7 @@ Tom Violeta Fundo   -       #791AED
   }
 }
 
-/* @media only screen and (min-width: 1800px){
-}
-
-@media only screen and (min-width: 1600px){
-}
-
-@media only screen and (max-width: 600px){
-}
-
-@media only screen and (max-width: 400px){   
-} */
+/* 
+@media only screen and (min-width: 1800px){}
+@media only screen and (min-width: 1600px){}
+*/
