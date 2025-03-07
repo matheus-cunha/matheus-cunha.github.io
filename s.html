@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Lan House</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Lan House</h1>
+        <div class="form-group">
+            <label for="computerId">ID do Computador:</label>
+            <input type="text" id="computerId">
+        </div>
+        <div class="form-group">
+            <label for="timeUsed">Tempo de Uso (minutos):</label>
+            <input type="number" id="timeUsed">
+        </div>
+        <button onclick="registerUsage()">Registrar Uso</button>
+        <div class="usage-log">
+            <h2>Registro de Uso:</h2>
+            <ul id="usageList"></ul>
+        </div>
+    </div>
+    <script >
+function registerUsage() {
+    const computerId = document.getElementById('computerId').value;
+    const timeUsed = document.getElementById('timeUsed').value;
+
+    if (computerId && timeUsed) {
+        const usageList = document.getElementById('usageList');
+        const listItem = document.createElement('li');
+        listItem.textContent = `Computador ID: ${computerId}, Tempo de Uso: ${timeUsed} minutos`;
+        usageList.appendChild(listItem);
+
+        document.getElementById('computerId').value = '';
+        document.getElementById('timeUsed').value = '';
+    } else {
+        alert('Por favor, preencha todos os campos.');
+    }
+}
+
+</script>
+</body>
+</html>

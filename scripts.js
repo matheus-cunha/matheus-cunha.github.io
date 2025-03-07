@@ -1,169 +1,91 @@
 "use strict";
-// ----------------------NET01 - CRONOMETRO----------------------------
-var n1 = new Date();
-var start_net01;
-let hour_net01 = 0;
-let minute_net01 = 0;
-let second_net01 = 0;
-let millisecond_net01 = 0;
-let cron_net01;
 
-function play_net01() {
-  if (millisecond_net01 == 0) {
-    start_net01 = n1.toLocaleTimeString();
-    document.getElementById('start_net01').innerText = start_net01;
-  }
-  pause_net01();
-  cron_net01 = setInterval(() => { timer_net01(); }, 10);
-}
+var Net15 = 4.50; 
+var Net30 = 5.50;
+var Net60 = 6.50;
 
-function pause_net01() {
-  clearInterval(cron_net01);
-}
+var IHN1;
+var IMN1;
+var ISN1;
 
-function reset_net01() {
-  hour_net01 = 0;
-  minute_net01 = 0;
-  second_net01 = 0;
-  millisecond_net01 = 0;
-  document.getElementById('hour_net01').innerText = '00';
-  document.getElementById('minute_net01').innerText = '00';
-  document.getElementById('second_net01').innerText = '00';
-  document.getElementById('start_net01').innerText = '00:00:00';
-  pause_net01();
-}
+var FHN1;
+var FMN1;
+var FSN1;
 
-function timer_net01() {
-  if ((millisecond_net01 += 10) == 1000) {
-    millisecond_net01 = 0;
-    second_net01++;
-  }
-  if (second_net01 == 60) {
-    second_net01 = 0;
-    minute_net01++;
-  }
-  if (minute_net01 == 60) {
-    minute_net01 = 0;
-    hour_net01++;
-  }
-  document.getElementById('hour_net01').innerText = returnData(hour_net01);
-  document.getElementById('minute_net01').innerText = returnData(minute_net01);
-  document.getElementById('second_net01').innerText = returnData(second_net01);
-}
 
-function returnData(input) {
-  return input >= 10 ? input : `0${input}`
-}
 
-// ----------------------NET02 - CRONOMETRO----------------------------
-var n2 = new Date();
-var start_net02;
-let hour_net02 = 0;
-let minute_net02 = 0;
-let second_net02 = 0;
-let millisecond_net02 = 0;
-let cron_net02;
 
-function play_net02() {
-  if (millisecond_net02 == 0) {
-    start_net02 = n2.toLocaleTimeString();
-    document.getElementById('start_net02').innerText = start_net02;
-  }
-  pause_net02();
-  cron_net02 = setInterval(() => { timer_net02(); }, 10);
-}
+var StatusN1 = 0;
+// 0 Parado ---- 1 Rodando ----- 2 Pausado
 
-function pause_net02() {
-  clearInterval(cron_net02);
-}
+// TICK INFINITO PARA ATUALIZAR OS NETS
+setInterval(() => { Timer(); }, 3000);
 
-function reset_net02() {
-  hour_net02 = 0;
-  minute_net02 = 0;
-  second_net02 = 0;
-  millisecond_net02 = 0;
-  document.getElementById('hour_net02').innerText = '00';
-  document.getElementById('minute_net02').innerText = '00';
-  document.getElementById('second_net02').innerText = '00';
-  pause_net02();
-  document.getElementById('start_net02').innerText = '00:00:00';
-}
+function Timer() {
+  // FUNÇÃO NOW DO TIMER GLOBAL
+  var N1 = new Date(); 
+  var Hour;
+  var Minute;
+  var Second;
 
-function timer_net02() {
-  if ((millisecond_net02 += 10) == 1000) {
-    millisecond_net02 = 0;
-    second_net02++;
-  }
-  if (second_net02 == 60) {
-    second_net02 = 0;
-    minute_net02++;
-  }
-  if (minute_net02 == 60) {
-    minute_net02 = 0;
-    hour_net02++;
-  }
-  document.getElementById('hour_net02').innerText = returnData(hour_net02);
-  document.getElementById('minute_net02').innerText = returnData(minute_net02);
-  document.getElementById('second_net02').innerText = returnData(second_net02);
-}
-
-function returnData(input) {
-  return input >= 10 ? input : `0${input}`
+  Hour = N1.getHours();
+  Minute = N1.getMinutes();
+  Second = N1.getSeconds();
+  console.log("AGORA " + Hour + ' : ' + Minute + ' : ' + Second);
 }
 
 
-// ----------------------NET03 - CRONOMETRO----------------------------
-var n3 = new Date();
-var start_net03;
-let hour_net03 = 0;
-let minute_net03 = 0;
-let second_net03 = 0;
-let millisecond_net03 = 0;
-let cron_net03;
 
-function play_net03() {
-  if (millisecond_net03 == 0) {
-    start_net03 = n3.toLocaleTimeString();
-    document.getElementById('start_net03').innerText = start_net03;
-  }
-  pause_net03();
-  cron_net03 = setInterval(() => { timer_net03(); }, 10);
+
+
+function GetNow(Hour,Minute,Second) {
+  // FUNÇÃO PARA PEGAR E DEVOLVER HORARIO ATUAL
+  var N1 = new Date(); 
+  
+  Hour;
+  Minute;
+  Second;
+
+  Hour = N1.getHours();
+  Minute = N1.getMinutes();
+  Second = N1.getSeconds();
+
+ console.log("GetNow pegou " + Hour + ' : ' + Minute + ' : ' + Second);
+
+  return Hour,Minute,Second;
+  // return Hour, Minute, Second;
+  // document.getElementById('hour_net01').innerText = returnData(hour_net01);
+  // document.getElementById('minute_net01').innerText = returnData(minute_net01);
+  // document.getElementById('second_net01').innerText = returnData(second_net01);
 }
 
-function pause_net03() {
-  clearInterval(cron_net03);
+
+
+
+
+function StartN1() {
+  var N1 = new Date(); 
+
+  GetNow( IHN1, IMN1, ISN1 );
+  // IHN1 = N1.getHours();
+  // IMN1 = N1.getMinutes();
+  // ISN1 = N1.getSeconds();
+  console.log("Inicial " + IHN1 + ' : ' + IMN1 + ' : ' + ISN1);
+ 
+  StatusN1 = 1;    
 }
 
-function reset_net03() {
-  hour_net03 = 0;
-  minute_net03 = 0;
-  second_net03 = 0;
-  millisecond_net03 = 0;
-  document.getElementById('hour_net03').innerText = '00';
-  document.getElementById('minute_net03').innerText = '00';
-  document.getElementById('second_net03').innerText = '00';
-  pause_net03();
-  document.getElementById('start_net03').innerText = '00:00:00';
-}
+function StopN1() {
+  var N1 = new Date(); 
+  FHN1 = N1.getHours();
+  FMN1 = N1.getMinutes();
+  FSN1 = N1.getSeconds();
+  StatusN1 = 2;
 
-function timer_net03() {
-  if ((millisecond_net03 += 10) == 1000) {
-    millisecond_net03 = 0;
-    second_net03++;
-  }
-  if (second_net03 == 60) {
-    second_net03 = 0;
-    minute_net03++;
-  }
-  if (minute_net03 == 60) {
-    minute_net03 = 0;
-    hour_net03++;
-  }
-  document.getElementById('hour_net03').innerText = returnData(hour_net03);
-  document.getElementById('minute_net03').innerText = returnData(minute_net03);
-  document.getElementById('second_net03').innerText = returnData(second_net03);
-}
-
-function returnData(input) {
-  return input >= 10 ? input : `0${input}`
+  // VHN1 = FHN1 - IHN1;
+  // VMN1 = FMN1 - IMN1;
+  // VSN1 = FSN1 - ISN1;
+  
+  // console.log("Hora Final: " + VHN1 + ' : ' + VMN1 + ' : ' +VSN1);
+  // FMN1 = N1.getMinutes();
 }
