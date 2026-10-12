@@ -3,289 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador de Tempo - POSTNET</title>
-    <link rel="stylesheet" href="./styles/index.css"></link>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/layout.css">
 </head>
-<body onload="CloseModal()"> 
-    <div class="navbar">
-        <div class="post-icon"></div>
-        <a class="btn-rearrange" onclick="OpenModal()"></a>
-    </div>
-    <div class="body-wrapper">
-        <!-- --------------------------------------------- NET 01 -------------------------------------------- -->
-        <div class="component-net">
-            <div class="card-nav">
-                <div class="help"></div>
-                <div class="pause"></div> 
-            </div>
-            <div class="component-net--name">
-                NET 01 
-            </div>
-            <div class="icon-computer"></div>
-            <b>Entrada</b>
-            <div class="component-net--timer" id="StartHourN1">
-                <span id="i_hour_net01">00</span>:<span id="i_minute_net01">00</span>:<span id="i_second_net01">00</span> 
-            </div>
-            <div class="component-net--now">
-                <span id="f_hour_net01">00</span>:<span id="f_minute_net01">00</span>:<span id="f_second_net01">00</span>       
-            </div>
-            <div class="divider"></div>
-            <div class="component-net--services">
-                <div class="row">
-                    <div class="col">
-                        Impressão PB
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="PBN1remove()">-</button>
-                        <div class="services-qtd" id="PBN1">0</div>
-                        <button class="services-button" onclick="PBN1add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Impressão Color
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="ColorN1remove()">-</button>
-                        <div class="services-qtd" id="ColorN1">0</div>
-                        <button class="services-button" onclick="ColorN1add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Scanner
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="ScanN1remove()">-</button>
-                        <div class="services-qtd" id="ScanN1">0</div>
-                        <button class="services-button" onclick="ScanN1add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Valor
-                    </div>
-                    <div class="col">
-                        <input type="text" id="input_value" name="input_value" class="services-value" />
-                    </div>
+<body>
+    <header id="heroSection" class="flex color-dark">
+        <div class="headwrapper wrapper">
+            <div class="col">
+                <h1>
+                    Olá! Meu nome é 
+                    <span>Matheus Cunha</span>
+                    Desenvolvedor de Software
+                </h1>
+                <div class="headwrapper-iconTab">
+                    <a href="https://github.com/matheus-cunha" class="headWarpper-iconTab--icon icon">
+                        <svg src="./imgs/HeroIcons/Github-icon.svg" alt="" id="header-git-icon"></svg>
+                    </a>
+                    <a href="https://br.linkedin.com/in/matheus-cunha-sjc" class="headWarpper-iconTab--icon icon">
+                        <svg src="./imgs/HeroIcons/Linkedin-icon.svg" alt="" id="header-lin-icon"></svg>
+                    </a>
+                    <a href="https://br.pinterest.com/portifoliomatheuscunha/" class="headWarpper-iconTab--icon icon">
+                        <svg src="./imgs/HeroIcons/Pinterest-icon.svg" alt="" id="header-pin-icon"></svg>
+                    </a>
                 </div>
             </div>
-            <div class="divider"></div>
-            <button class="button-start start" id="btn-start-n1" onclick="StartN1()">Começar</button>
-            <button class="button-start stop" id="btn-stop-n1" onclick="StopN1()">Finalizar</button>
-            <button class="button-start reset" id="btn-reset-n1" onclick="ResetN1()">Resetar</button>
-            <div class="final-value" id="final-value-N1">R$ 0,00</div>
         </div>
-        <!-- --------------------------------------------- NET 02 -------------------------------------------- -->
-        <div class="component-net">
-            <div class="card-nav">
-                <div class="help"></div>
-                <div class="pause"></div> 
+        <div class="headWrapper-resume">
+            Resumo
+            <div class="headWrapper-resume-next">
+                V
             </div>
-            <div class="component-net--name">
-                NET 02 
-            </div>
-            <div class="icon-computer"></div>
-            <b>Entrada</b>
-            <div class="component-net--timer" id="StartHourN2">
-                <span id="i_hour_net02">00</span>:<span id="i_minute_net02">00</span>:<span id="i_second_net02">00</span> 
-            </div>
-            <div class="component-net--now">
-                <span id="f_hour_net02">00</span>:<span id="f_minute_net02">00</span>:<span id="f_second_net02">00</span>       
-            </div>
-            <div class="divider"></div>
-            <div class="component-net--services">
-                <div class="row">
-                    <div class="col">
-                        Impressão PB
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="PBN2remove()">-</button>
-                        <div class="services-qtd" id="PBN2">0</div>
-                        <button class="services-button" onclick="PBN2add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Impressão Color
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="ColorN2remove()">-</button>
-                        <div class="services-qtd" id="ColorN2">0</div>
-                        <button class="services-button" onclick="ColorN2add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Scanner
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="ScanN2remove()">-</button>
-                        <div class="services-qtd" id="ScanN2">0</div>
-                        <button class="services-button" onclick="ScanN2add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Valor
-                    </div>
-                    <div class="col">
-                        <input type="text" id="input_value" name="input_value" class="services-value" />
-                    </div>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <button class="button-start start" id="btn-start-n2" onclick="StartN2()">Começar</button>
-            <button class="button-start stop" id="btn-stop-n2" onclick="StopN2()">Finalizar</button>
-            <button class="button-start reset" id="btn-reset-n2" onclick="ResetN2()">Resetar</button>
-            <div class="final-value" id="final-value-N2">R$ 0,00</div>
         </div>
-        <!-- --------------------------------------------- NET 03 -------------------------------------------- -->  
-        <div class="component-net">
-            <div class="card-nav">
-                <div class="help"></div>
-                <div class="pause"></div> 
+    </header>
+    <section id="aboutSection" class="flex color-light innerPadding">
+        <div class="aboutWrapper row">
+            <div class="col">
+                <div class="aboutWrapper-img"></div>
             </div>
-            <div class="component-net--name">
-                NET 03
+            <div class="col">
+                <span>Matheus Cunha</span>
+                Estudante do 1º semestre de Desevolvimento de Software Multiplataforma pela FATEC-SJC e formado analista de desenvolvimento de sistemas.
+                <p>
+                Apaixonado por novas técnologias e tenho interesse na área de desenvolvimento full stack. Gosto de ver como as coisas funcionam. Gosto também de jogos de tabuleiro, livros e passeios ao ar livre. 
+                </p>
             </div>
-            <div class="icon-computer"></div>
-            <b>Entrada</b>
-            <div class="component-net--timer" id="StartHourN3">
-                <span id="i_hour_net03">00</span>:<span id="i_minute_net03">00</span>:<span id="i_second_net03">00</span> 
-            </div>
-            <div class="component-net--now">
-                <span id="f_hour_net03">00</span>:<span id="f_minute_net03">00</span>:<span id="f_second_net03">00</span>       
-            </div>
-            <div class="divider"></div>
-            <div class="component-net--services">
-                <div class="row">
-                    <div class="col">
-                        Impressão PB
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="PBN3remove()">-</button>
-                        <div class="services-qtd" id="PBN3">0</div>
-                        <button class="services-button" onclick="PBN3add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Impressão Color
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="ColorN3remove()">-</button>
-                        <div class="services-qtd" id="ColorN3">0</div>
-                        <button class="services-button" onclick="ColorN3add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Scanner
-                    </div>
-                    <div class="col">
-                        <button class="services-button" onclick="ScanN3remove()">-</button>
-                        <div class="services-qtd" id="ScanN3">0</div>
-                        <button class="services-button" onclick="ScanN3add()">+</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        Valor
-                    </div>
-                    <div class="col">
-                        <input type="text" id="input_value" name="input_value" class="services-value" />
-                    </div>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <button class="button-start start" id="btn-start-n3" onclick="StartN3()">Começar</button>
-            <button class="button-start stop" id="btn-stop-n3" onclick="StopN3()">Finalizar</button>
-            <button class="button-start reset" id="btn-reset-n3" onclick="ResetN3()">Resetar</button>
-            <div class="final-value" id="final-value-N3">R$ 0,00</div>
         </div>
-    <!-- --------------------------------------------- FIM NETS------------------------------------ -->
-    </div>
-    <div class="modal" >
-        <div class="modal-backdrop" id="modal">
-            <div class="modal-content">
-                <!-- <form action="/action_page.php" method="get"> -->
-                    <div class="modal-row">
-                        <span>Troca de computadores</span>
-                    </div>
-                    <div class="modal-row modal-nets">
-                        <div class="modal-col">
-                                <div class="net-block">
-                                    De:
-                                </div>
-                                <div class="net-block">
-                                    <input type="radio" id="from-net01" value="from-net01" name="From">
-                                    <label for="from-net01" id="from-net01-label">NET 01</label>
-                                </div>
-                                <div class="net-block">
-                                    <input type="radio" id="from-net02" value="from-net01" name="From">
-                                    <label for="from-net02" id="from-net02-label">NET 02</label>
-                                </div>
-                                <div class="net-block">
-                                    <input type="radio" id="from-net03" value="from-net01" name="From">
-                                    <label for="from-net03" id="from-net03-label">NET 03</label>
-                                </div>                            
-                                <!-- <input type="submit" value="Submit"> -->
+    </section>
+    <section id="projectsSection" class="flex color-dark innerPadding">
+        <div class="projectsWrapper wrapper">
+            <div class="wrapperTitle">
+                Projetos:
+            </div>
+            <div class="projects">
+                <div class="projects-item card">
+                    <div class="projects-item--image"></div>
+                    <div class="projects-item--description">
+                        <span>Projeto 1</span>
+                        <span>Breve descrição</span>
+                    </div>         
+                </div>
+                <div class="projects-item card">
+                    <div class="projects-item--image"></div>
+                    <div class="projects-item--description">
+                        <span>Projeto 1</span>
+                        <span>Breve descrição</span>
+                    </div>         
+                </div>
+                <div class="projects-item card">
+                    <div class="projects-item--image"></div>
+                    <div class="projects-item--description">
+                        <span>Projeto 1</span>
+                        <span>Breve descrição</span>
+                    </div>         
+                </div>
+                <div class="projects-item card">
+                    <div class="projects-item--image"></div>
+                    <div class="projects-item--description">
+                        <span>Projeto 1</span>
+                        <span>Breve descrição</span>
+                    </div>         
+                </div>
+                <div class="projects-item card">
+                    <div class="projects-item--image"></div>
+                    <div class="projects-item--description">
+                        <span>Projeto 1</span>
+                        <span>Breve descrição</span>
+                    </div>         
+                </div>
+            </div>
+    </section>
+    <section id="educationSection" class="flex color-dark innerPadding"> 
+        <div class="educationWrapper wrapper">
+            <div class="wrapperTitle">
+                Formação:
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="educationCard card">
+                        <div class="educationCard-icon">
+                            <svg src="./imgs/icons/graduate.svg" alt="" id="card-01-ico"></svg>
                         </div>
-                        <div class="rearrange-icon"></div>
-                        <div class="modal-col">
-                            <div class="net-block">
-                                Para:
+                        <div class="educationCard-header flex">
+                            Desenvolvimento de Software Multiplataforma
+                        </div>
+                        <div class="educationCard-content flex">
+                            FATEC - Prof. Jessen Vidal <br> São José dos Campos - SP
+                        </div>
+                        <div class="educationCard-content--mobile">
+                            Curso superior de tecnologia com foco no desenvolvimento de sistemas web, mobile e desktop. Durante o curso participamos de projetos integrados (API), desenvolvendo soluções reais em parceria com empresas pareceiras da Fatec
+                        </div>
+                        <div class="educationCard-date flex">
+                            2026 - 2029
+                        </div>
+                        <div class="educationCard-status">
+                            <span class="ongoing">Em andamento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="educationCard card">
+                        <div class="educationCard-icon">
+                            <svg src="./imgs/icons/graduation.svg" alt="" id="card-02-ico"></svg>
+                        </div>
+                        <div class="educationCard-header flex">
+                            Graduação - Análise Desenvolvimento de Sistemas
+                        </div>
+                        <div class="educationCard-content flex">
+                            Estácio de sá
+                        </div>                       
+                        <div class="educationCard-content--mobile">
+                            Curso superior de tecnologia com foco no desenvolvimento de sistemas web, mobile e desktop. Durante o curso participamos de projetos integrados (API), desenvolvendo soluções reais em parceria com empresas pareceiras da Fatec
+                        </div>
+                        <div class="educationCard-date flex">
+                            2019 - 2021
+                        </div>
+                        <div class="educationCard-status flex">
+                            <span class="fineshed">Finalizado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="educationCard card">
+                        <div class="educationCard-icon">
+                            <svg src="./imgs/icons/chalkboard.svg" alt="" id="card-03-ico"></svg>
+                        </div>
+                        <div class="educationCard-header flex">
+                            Técnico - Administração de empresas
+                        </div>
+                        <div class="educationCard-content flex">
+                            Instituto de Desenvolvimento Inovando Aprendizado - IDEIA
+                        </div>                       
+                        <div class="educationCard-content--mobile">
+                            Curso técnico de tecnologia com foco no desenvolvimento de sistemas web, mobile e desktop. Durante o curso participamos de projetos integrados (API), desenvolvendo soluções reais em parceria com empresas pareceiras da Fatec
+                        </div>
+                        <div class="educationCard-date flex">
+                            2012 - 2014
+                        </div>
+                        <div class="educationCard-status flex">
+                            <span class="fineshed">Finalizado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="educationCard card">
+                        <div class="educationCard-icon">
+                            <svg src="./imgs/icons/chalkboard.svg" alt="" id="card-04-ico"></svg>
+                        </div>
+                        <div class="educationCard-header flex">
+                            Curso técnico em informática geral 
+                        </div>
+                        <div class="educationCard-content flex">
+                            Recovale Treinamentos - Easycomp
+                        </div>
+                        <div class="educationCard-content--mobile">
+                            Texto para ser apresentado em @Media
+                        </div>
+                        <div class="educationCard-date flex">
+                            2006 - 2011
+                        </div>
+                        <div class="educationCard-status flex">
+                            <span class="fineshed">Finalizado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="timelineSection" class="flex color-dark innerPadding"> 
+        <div class="educationWrapper wrapper">            
+            <div class="wrapperTitle">
+                Experência profissional:
+            </div>
+            <div class="timeline">
+                <div class="row ">
+                    <div class="timeline-line col">
+                        <div class="timeline-line-dot active"></div>
+                    </div>
+                    <div class="timeine-content col">
+                        <p>Jun 2023 até o momento </p> 
+                        <p>Coordenador de loja </p> 
+                        <p>Postnet SJC </p>
+                        <p>Gerenciamento de pessoas e recursos, criação de artes, produção gráfica e responsável técnico.</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="timeline-line col">
+                        <div class="timeline-line-dot"></div>
+                    </div>
+                    <div class="timeine-content col">
+                        <p>Mar 2021 a Jun 2022 </p>
+                        <p>Suporte técnico Nível 1 e 2 </p>
+                        <p>Compvale Técnologia </p>
+                        <p>Suporte ao usuário, manutenção de Hardware, manutenção de servidores, manutenção de websites, criação e gerenciamento de AD/DS e redes.</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="timeline-line col">
+                        <div class="timeline-line-dot"></div>
+                    </div>
+                    <div class="timeine-content col">
+                        <p>Out 2020 a Mar 2021 </p> 
+                        <p>Suporte técnico Nível 1 </p>
+                        <p>SMP Contabilidade </p>
+                        <p>Suporte ao usuário, manutenção de Hardware e gerenciamento de rede. </p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="timeline-line col">
+                        <div class="timeline-line-dot"></div>
+                    </div>
+                    <div class="timeine-content col">
+                        <p>Ago 2019 a Dez 2019 </p> 
+                        <p>Suporte técnico Nível 1 </p>
+                        <p>Valejet </p>
+                        <p>Manutenção e formatação de computadores, manutenção de códigos HTML, manutenção CFTV, criação de anúncios marketplace e SEO básico.</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="timeline-line col">
+                        <div class="timeline-line-dot"></div>
+                    </div>
+                    <div class="timeine-content col">
+                        <p>Dez 2013 a Mai 2018 </p> 
+                        <p>Designer Gráfico </p>
+                        <p>Postnet SJC </p>
+                        <p>Criação e fechamento de artes, produção gráfica, identidade visual corporativa e atendimento ao cliente. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hardSkillsSection" class="flex color-dark innerPadding">
+        <div class="hardSkillsWrapper wrapper">
+            <div class="wrapperTitle">
+                Competência técnica:
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="hardSkills-card card">
+                        <div class="hardSkills-card--head">
+                            <div class="hardSkills-icon">
+                                <svg src="./imgs/Icons/hardtskills-backend.svg" alt="" id="hardSkills-backend"></svg>
                             </div>
-                            <div class="net-block">
-                                <input type="radio" id="to-net01" value="to-net01" name="To">
-                                <label for="to-net01" id="to-net01-label">NET 01</label>
-                            </div>
-                            <div class="net-block">
-                                <input type="radio" id="to-net02" value="to-net02" name="To">
-                                <label for="to-net02" id="to-net02-label">NET 02</label>
-                            </div>
-                            <div class="net-block">
-                                <input type="radio" id="to-net03" value="to-net03" name="To">
-                                <label for="to-net03" id="to-net03-label">NET 03</label>
-                            </div>   
+                            Backend
+                        </div>
+                        <div class="hardSkills-card--content">
+                            <span>Python</span> 
+                            <span>Java</span> 
+                            <span>MySQL</span> 
+                            <span>Flask</span> 
                         </div>
                     </div>
-                    <div class="modal-row">
-                        <div class="modal-col">
-                            <button class="button-modal" id="botao-temporario" onclick="CloseModal()" class="fecharModal">
-                                Cancelar
-                            </button>
+                </div>
+                <div class="col">
+                    <div class="hardSkills-card card">
+                        <div class="hardSkills-card--head">
+                            <div class="hardSkills-icon">
+                                <svg src="./imgs/Icons/hardtskills-frontend.svg" alt="" id="hardSkills-frontend"></svg>
+                            </div>
+                            Frontend
                         </div>
-                        <div class="modal-col">
-                            <button class="button-modal" id="botao-temporario" onclick="SubmitModal()" class="fecharModal">
-                                Trocar nets
-                            </button>
+                        <div class="hardSkills-card--content">
+                            <span>HTML</span> 
+                            <span>CSS</span> 
+                            <span>Sass</span> 
+                            <span>Angular 5</span> 
+                            <span>React</span> 
+                            <span>Figma</span> 
                         </div>
                     </div>
-                <!-- </form> -->
+                </div>
+                <div class="col">
+                    <div class="hardSkills-card card">
+                        <div class="hardSkills-card--head">
+                            <div class="hardSkills-icon">
+                                <svg src="./imgs/Icons/hardtskills-tools.svg" alt="" id="hardSkills-tools"></svg>
+                            </div>
+                            Ferramentas
+                        </div>
+                        <div class="hardSkills-card--content">
+                            <span>AWS</span> 
+                            <span>Gerenciamento de redes</span> 
+                            <span>Design gráfico</span> 
+                            <span>Windows Server</span> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="./js/ControladorNets.js"></script>
-    <script src="./js/Global.js"></script>
-    <SCRIPt>
-        // DESCOMENTAR AO FAZER LANÇAMENTO DO APP - CONFIRMAÇÃO DE FECHAMENTO DE PAGINA 
-        window.onbeforeunload = function(e) {
-            return 'Tem a certeza que quer fechar a janela?';
-        };
-    </SCRIPt>
+    </section>
+    <article id="contactSection" class="flex color-light innerPadding">
+        <div class="contactWrapper">
+            <div class="wrapperTitle">
+                <span>Meus contatos</span>
+                <span>Fique a vontade para entrar em contato através destes canais.</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Linkedin
+                    <p>in/matheus-cunha-sjc</p>
+                </div>
+                <div class="col">
+                    Email
+                    <p>matheus-cunha-sjc@gmail.com</p>
+                </div>
+                <div class="col">
+                    Linkedin
+                    <p>github.com/matheus-cunha</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="flex color-dark">
+        @2026 Matheus Henrique da Cunha. All rights reserved.
+    </footer>
 </body>
-</html>
+</html> 
 
-
-<!-- Falta
-Mascara Relogio 
-Mascara Relogio Final 
-Mascara Valor 
-Funcionamento Valor 
-Mascara Valor Final
-Trocar posção dos nets 
-Help registro
-Favicon
+<!--
+Definir paleta de cores do projeto 
+Botão resumo home 
+Colocar foto no about 
+Programar parte de projetos 
+Terminar a timeline 
+Terminar sessão meus contatos 
+Fazer navbar com ancoragem em sessões 
+Fazer o efeito que eu queria na home de animaçõa  
+resposnividade
 -->
+
+
+
+<!-- 
+    Projetos
+
+    Hospedagem 
+    https://github.com/Kurumin-DSM1-2026/API_DSM_1SEMESTE_2026
+
+    https://matheus-cunha.github.io/AquaTerra-Products-page/index.html
+    https://github.com/matheus-cunha/AquaTerra-Products-page
+
+    https://matheus-cunha.github.io/Postnet-timer/
+    https://github.com/matheus-cunha/Postnet-timer
+
+
+    
+    https://github.com/matheus-cunha/Visto-Aqui-Piloto
+    https://matheus-cunha.github.io/Visto-Aqui-Piloto/index.html
+
+    https://github.com/matheus-cunha/huddle-landing-page
+    https://matheus-cunha.github.io/huddle-landing-page/
+
+    https://github.com/matheus-cunha/product-preview-card-component-main
+    https://matheus-cunha.github.io/product-preview-card-component-main/
+
+
+
+    https://github.com/matheus-cunha/Chocobom
+
+    https://github.com/matheus-cunha/Tracking-system
+
+    https://github.com/matheus-cunha/chat-layout
+
+
+
+    https://github.com/matheus-cunha/backend-interview
+
+    https://github.com/matheus-cunha/single-price-grid
+    https://matheus-cunha.github.io/single-price-grid/
+
+    https://matheus-cunha.github.io/base-apparel/
+    https://github.com/matheus-cunha/base-apparel
+ -->
