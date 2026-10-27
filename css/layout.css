@@ -305,18 +305,18 @@ header span{
 }
 
 #card-01-ico{
-    -webkit-mask-image: url(../imgs/icons/graduate.svg);
+    -webkit-mask-image: url(../imgs/Icons/graduate.svg);
     mask-image: url(../imgs/icons/graduate.svg);
 }
 
 #card-02-ico{
-    -webkit-mask-image: url(../imgs/icons/graduation.svg);
-    mask-image: url(../imgs/icons/graduation.svg);
+    -webkit-mask-image: url(../imgs/Icons/graduation.svg);
+    mask-image: url(../imgs/Icons/graduation.svg);
 }
 
 #card-03-ico, #card-04-ico{
     -webkit-mask-image: url(../imgs/icons/chalkboard.svg);
-    mask-image: url(../imgs/icons/chalkboard.svg);
+    mask-image: url(../imgs/Icons/chalkboard.svg);
 }
 
 .educationCard-icon{
