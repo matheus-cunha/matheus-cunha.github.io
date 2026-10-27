@@ -5,8 +5,6 @@ body{
     font-family: calibri, Helvetica, sans-serif;
 }
 
-/* section{} */
-
 .row{
     gap: 2rem;
     display: flex;
@@ -97,8 +95,8 @@ header span{
 }
 
 .headWarpper-iconTab--icon{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-right: 1rem;
     display: flex;
     justify-content: center;
@@ -116,9 +114,13 @@ header span{
     top: 90%;
     left: 50%;
     transform: translateX(-50%);
+    font-weight: bolder;
+    animation: timelineDot 5s infinite;
 }
 
-.headWrapper-resume-next{}
+.headWrapper-resume-next{
+    transform: scaleX(230%);
+}
 
 .headwrapper svg{
     width: 100%;
@@ -142,10 +144,8 @@ header span{
     mask-image: url(../imgs/HeroIcons/Linkedin-icon.svg);
 }
 
-/* #aboutSection{} */
-
 .aboutWrapper , .contactWrapper{
-    width: 800px;
+    width: 1100px;
     gap: 60px;
 }
 
@@ -175,13 +175,13 @@ header span{
 }
 
 .aboutWrapper-img{
-    height: 18rem;
-    width: 15rem;
+    height: 25rem;
+    width: 18rem;
     border-radius: 100px;
     background-color: #ffffff;
     content: "";
     border: solid #ffffff 5px;
-    background-image: url("../imgs/hero.jpe");
+    background-image: url("../imgs/portrait.png");
     box-shadow: 5px 5px 5px #240029;
     background-position: center;
     background-size: cover;
@@ -192,14 +192,10 @@ header span{
 .projects{
     display: grid;
     grid-template-columns: auto auto auto;
-    /* background-color: dodgerblue; */
-    /* padding: 10px; */
     gap: 1rem;
 }
 
 .projects-item{
-    /* background-color: #ffffff; */
-    /* border: 1px solid black; */
     padding: 1rem;
     font-size: 30px;
     text-align: center;
@@ -211,17 +207,13 @@ header span{
 
 .projects-item--image{
     border-radius: 10px;
-
-
-    /* background-color: #240029; */
-    /* z-index: 3; */
     width: 100%;
     height: 5rem;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
-    background-image: url("../imgs/hero.jpe");
+    background-image: url("../imgs/portrait.png");
 }
 
 .projects-item--description{
@@ -239,12 +231,6 @@ header span{
     display: block;
     font-weight: bolder;
 }
-
-
-
-/* #educationSection{} */
-
-/* .educationWrapper{} */
 
 .educationCard{
     min-height: 19rem;
@@ -382,16 +368,13 @@ header span{
     background-color: #005018;
 }
 
-
-/* #timelineSection{} */
-
-/* .timelineWrapper{} */
-
-/* .timeline{} */
-
 .timeline .timeline col{
     flex: 1;
     width: 1100px;
+}
+
+.timeline .row{
+    margin: 0;
 }
 
 .timeline .timeline-line{
@@ -402,17 +385,13 @@ header span{
     margin-right: 1rem;
 }
 
-.timeline .row{
-    margin-bottom: 2rem;
-}
-
 .timeline .timeline-line::before{
     display: block;
     position: absolute;
     z-index: 1;
     content: '';
     width: 3px;
-    height: 110px;
+    height: 100%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ffffff68;
@@ -426,7 +405,7 @@ header span{
     width: 12px;
     height: 12px;
     left: 50%;
-    top: 12px;
+    top: 20px;
     background-color: #240029;
     border: solid 2px #ffffff;
     border-radius: 100%;
@@ -441,23 +420,35 @@ header span{
     transform: translate(-50%, -50%) scale(1);
 }
 
-.timeline .timeine-content{
+.timeline .timeline-content{
     text-align: left;
+    padding-bottom: 2rem;
 }
 
-.timeline .timeine-content p{
+.timeline .timeline-content p{
     margin: 0;
 }
 
-/* .timeline .timeine-content p:first-child{} */
+.timeline .timeline-content .date{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-size: 0.8rem;
+}
 
-/* .timeline .timeine-content p:last-child{} */
+.timeline .timeline-content .job{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
 
-/* #hardSkillsSection{} */
+.timeline .timeline-content .job:last-of-type{
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bolder;
+}
 
-/* .hardSkillsWrapper{} */
-
-/* .hardSkills-card{} */
+.hardSkills-card{
+    height: 100%;
+}
 
 .hardSkills-card--head{
     display: flex;
@@ -522,8 +513,6 @@ header span{
     display: block;
     font-size: 1.3rem;
 }
-
-
 
 footer{
     width: 100%;
