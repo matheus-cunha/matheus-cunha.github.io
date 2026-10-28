@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #15004b;
+    --color-primary-dark: #010029;
+    --color-light:#ffffff;
+    --color-grey: #a5aab4;
+    --color-dark-grey:#717F9C;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -32,9 +40,9 @@ body{
     text-justify: center;
     justify-content: center;
     align-items: center;
-    background-color: #320638;
+    background-color: var(--color-primary);
     border-radius: 25px;
-    box-shadow: 5px 5px 5px #240029;
+    box-shadow: 5px 5px 5px var(--color-primary-dark);
     padding: 1.5rem 1rem;
     position: relative;
     overflow: hidden;
@@ -45,13 +53,13 @@ body{
 }
 
 .color-light{
-    background-color: #51005c;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--color-light);
 }
 
 .color-dark{
-    background-color: #240029;
-    color: #ffffff;
+    background-color: var(--color-primary-dark);
+    color: var(--color-light);
 }
 
 .innerPadding{
@@ -105,7 +113,7 @@ header span{
 }
 
 .headWarpper-iconTab--icon:hover svg{
-    background-color: #ff0000;
+    background-color: var(--color-dark-grey);
     transition: 0.8s;
 }
 
@@ -126,7 +134,7 @@ header span{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background-color: #ffffff;
+    background-color: var(--color-light);
 }
 
 #header-git-icon{
@@ -161,6 +169,8 @@ header span{
     font-display: flex;
     justify-content: center;
     font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .aboutWrapper .col p{
@@ -178,11 +188,11 @@ header span{
     height: 25rem;
     width: 18rem;
     border-radius: 100px;
-    background-color: #ffffff;
+    background-color: var(--color-light);
     content: "";
-    border: solid #ffffff 5px;
+    border: solid var(--color-light) 5px;
     background-image: url("../imgs/portrait.png");
-    box-shadow: 5px 5px 5px #240029;
+    box-shadow: 5px 5px 5px var(--color-primary-dark);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
@@ -194,7 +204,10 @@ header span{
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     height: 100% !important;
-    
+}
+
+.api-projects{
+    grid-template-columns: 1fr 1fr;
 }
 
 .projects-item{
@@ -202,9 +215,9 @@ header span{
     font-size: 30px;
     text-align: left;
     border-radius: 10px;
-    color: #240029;
-    background: #ffffff;
-    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 0%, rgb(203, 202, 202) 100%);
+    color: var(--color-primary);
+    background: var(--color-light);
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 0%, rgb(228, 228, 253) 100%);
 }
 
 .projects-item--image{
@@ -218,15 +231,15 @@ header span{
 }
 
 #prj-01 .projects-item--image{
-    /* background-image: url("https://github.com/matheus-cunha/Chocobom/raw/master/src/assets/animation.gif");  */
+    background-image: url("../imgs/placeholder.png"); 
 }
 
 #prj-02 .projects-item--image{
-    /* background-image: url("https://raw.githubusercontent.com/matheus-cunha/landing-page/master/img/Readme/banner-logo.jpg");  */
+    background-image: url("../imgs/placeholder.png"); 
 }
 
 #prj-03 .projects-item--image{
-    /* background-image: url("https://raw.githubusercontent.com/matheus-cunha/landing-page/master/img/Readme/banner-logo.jpg");  */
+    background-image: url("../imgs/placeholder.png"); 
 }
 
 #prj-04 .projects-item--image{
@@ -259,13 +272,14 @@ header span{
 .projects-item--description .techs > span{
     padding: 0rem 0.5rem;
     font-size: 12px;
-    border: solid #51005c 1px;
+    border: solid var(--color-primary) 1px;
     border-radius: 30px;
-    margin: 0.3rem 0.5rem;
+    margin: 0.3rem 0.5rem 0.3rem 0;
     line-height: 1.3rem;
     font-size: 10px;
     font-weight: light;
     text-decoration: none;
+    display: block;
 
 }
 
@@ -294,15 +308,15 @@ header span{
     flex-direction: row;
     font-weight: bolder;
     justify-content: center;
-    background-color: #51005c;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--color-light);
     border-radius: 10px;
     font-size: 0.9rem !important;
 }
 
 .git{
     width: 1.5rem;
-    background-color: #ffffff;
+    background-color: var(--color-light);
     height: 1.5rem;
     margin-right: 0.5rem;
     background-repeat: no-repeat;
@@ -327,7 +341,7 @@ header span{
     content: '';
     display: block;
     position: absolute;
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--color-grey);
     width: 60px;
     height: 100%;
     left: 0;
@@ -371,15 +385,15 @@ header span{
     transition: .7s;
 }
 
-.educationCard:hover , .hardSkills-card:hover{
+.educationCard:hover , .hardSkills-card:hover , .git-btn:hover{
     transition: 1s;
-    background-color: #8c2d77bd;
+    background-color: #2a00c0bd;
 }
 
 .educationCard-icon svg{
     width: 2.6rem;
     height: 2.6rem;
-    background-color: #240029;
+    background-color: var(--color-primary);
 }
 
 .educationCard-content--mobile{
@@ -409,7 +423,7 @@ header span{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color-light);
     border-radius: 10px;
     margin-bottom: 1.5rem;
 }
@@ -478,7 +492,8 @@ header span{
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff68;
+    background-color: var(--color-light);
+    opacity: 0.5;
 }
 
 .timeline .timeline-line-dot{
@@ -490,8 +505,8 @@ header span{
     height: 12px;
     left: 50%;
     top: 20px;
-    background-color: #240029;
-    border: solid 2px #ffffff;
+    background-color: var(--color-primary);
+    border: solid 2px var(--color-light);
     border-radius: 100%;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -499,7 +514,7 @@ header span{
 .timeline .active{
     width: 15px;
     height: 15px;
-    background-color: #ffffff;
+    background-color: var(--color-light);
     animation: timelineDot 1s infinite;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -552,7 +567,7 @@ header span{
 .hardSkills-card--content > span{
     padding: 0.1rem 1.5rem;
     font-size: 12px;
-    border: solid #ffffff 1px;
+    border: solid var(--color-light) 1px;
     border-radius: 5px;
     margin: 0.3rem 0.5rem;
 }
@@ -560,7 +575,7 @@ header span{
 .hardSkills-card svg{
     width: 1.6rem;
     height: 1.6rem;
-    background-color: #240029;
+    background-color: var(--color-primary);
 }
 
 .hardSkills-icon{
@@ -569,7 +584,7 @@ header span{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color-light);
     border-radius: 5px;
     margin-right: 0.5rem;
 }
@@ -602,7 +617,7 @@ footer{
     width: 100%;
     height: 4rem;
     font-weight: bolder;
-    color: #ffffff52 !important;
+    color: var(--color-light) !important;
 }
 
 @keyframes timelineDot {
@@ -614,5 +629,227 @@ footer{
     }
     100% {
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .wrapper{
+        width: 900px;
+    }
+
+    .innerPadding{
+        padding: 6rem 0;
+    }
+
+    .wrapperTitle{
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .headwrapper{
+        height: 300px;
+    }
+    
+    header h1{
+        font-size: 1.3rem;
+    }
+
+    header span{
+        font-size: 3rem;
+    }
+
+    .headWarpper-iconTab--icon{
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    
+    .aboutWrapper , .contactWrapper{
+        width: 900px;
+        gap: 50px;
+    }
+
+    .aboutWrapper .col{
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+        font-display: flex;
+        font-weight: bold;
+    }
+
+    .aboutWrapper .col p{
+        font-size: 1.1rem;
+        font-weight: lighter;
+    }
+
+    .aboutWrapper span:first-child{
+        font-size: 1.7rem;
+    }
+
+    .aboutWrapper-img{
+        height: 25rem;
+        width: 15rem;
+    }
+
+    .projects{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .api-projects{
+        grid-template-columns: 1fr;
+    }
+
+    .projects-item{
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .projects-item--image{
+        height: 11rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .projects-item--description{
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .projects-item--description .techs > span{
+        padding: 0rem 0.5rem;
+        margin: 0.3rem 0.5rem 0.3rem 0;
+        line-height: 1.2rem;
+    }
+
+    .projects-item--description .techs{
+        margin: 0.7rem 0;
+    }
+
+    .projects-item--title{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .git-btn{
+        padding: 0.3rem 0.5rem; 
+        font-size: 0.8rem !important;
+    }
+
+    .git{
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.5rem;
+    }
+
+    .educationCard{
+        min-height: 18rem;
+    }
+
+    .educationCard:before , .hardSkills-card:before{
+        width: 50px;
+    }
+
+    .educationCard:after , .hardSkills-card::after{
+        width: 30px;
+        left: 30px;
+    }
+
+    .educationCard-icon svg{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .educationCard-icon{
+        width: 2.1rem;
+        height: 2.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .educationCard-header{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        height: 4rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .educationCard-content{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        height: 5rem;
+    }
+
+    .educationCard-date{
+        font-size: 0.9rem;
+        height: 1.3rem;
+        margin: .5rem;
+    }
+
+    .educationCard-status span{
+        font-size: .9rem;
+        padding: 0.3rem 1.1rem;
+    }
+
+    .timeline .timeline col{
+        width: 900px;
+    }
+
+    .timeline .timeline-line{
+        width: 1.5rem;
+        max-width: 1.5rem;
+        min-width: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .timeline .timeline-line::before{
+        width: 3px;
+    }
+
+    .timeline .timeline-line-dot{
+        width: 10px;
+        height: 10px;
+        top: 20px;
+    }
+
+    .timeline .active{
+        width: 13px;
+        height: 13px;
+    }
+
+    .timeline .timeline-content{
+        padding-bottom: 1.5rem;
+    }
+
+    .timeline .timeline-content .date{
+        font-size: 0.8rem;
+    }
+
+    .timeline .timeline-content .job{
+        font-size: 1.2rem;
+    }
+
+    .timeline .timeline-content .job:last-of-type{
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .hardSkills-card--content > span{
+        padding: 0.1rem 0.8rem;
+        font-size: 12px;
+        margin: 0.3rem 0.5rem;
+    }
+
+    .hardSkills-card svg{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .hardSkills-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .contactWrapper .wrapperTitle span:last-child{
+        font-size: 1.1rem;
+    }
+
+    footer{
+        height: 3rem;
     }
 }
