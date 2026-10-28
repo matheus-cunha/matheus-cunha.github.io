@@ -191,14 +191,16 @@ header span{
 
 .projects{
     display: grid;
-    grid-template-columns: auto auto auto;
     gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100% !important;
+    
 }
 
 .projects-item{
     padding: 1rem;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     color: #240029;
     background: #ffffff;
@@ -208,28 +210,110 @@ header span{
 .projects-item--image{
     border-radius: 10px;
     width: 100%;
-    height: 5rem;
+    height: 10rem;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
-    background-image: url("../imgs/portrait.png");
 }
+
+#prj-01 .projects-item--image{
+    /* background-image: url("https://github.com/matheus-cunha/Chocobom/raw/master/src/assets/animation.gif");  */
+}
+
+#prj-02 .projects-item--image{
+    /* background-image: url("https://raw.githubusercontent.com/matheus-cunha/landing-page/master/img/Readme/banner-logo.jpg");  */
+}
+
+#prj-03 .projects-item--image{
+    /* background-image: url("https://raw.githubusercontent.com/matheus-cunha/landing-page/master/img/Readme/banner-logo.jpg");  */
+}
+
+#prj-04 .projects-item--image{
+    background-image: url("https://raw.githubusercontent.com/matheus-cunha/landing-page/master/img/Readme/banner-logo.jpg"); 
+}
+
+#prj-05 .projects-item--image{
+    background-image: url("https://raw.githubusercontent.com/matheus-cunha/Visto-Aqui-Piloto/master/img/Readme/Banner-logo.jpg"); 
+}
+
+#prj-06 .projects-item--image{
+    background-image: url("https://raw.githubusercontent.com/matheus-cunha/Chocobom/master/src/assets/banner-logo.jpg"); 
+}
+
+#prj-07 .projects-item--image{
+    background-image: url("https://raw.githubusercontent.com/matheus-cunha/Tracking-system/refs/heads/master/src/assets/banner-logo.jpg"); 
+}
+
+
 
 .projects-item--description{
     font-size: 1.1rem;
     line-height: 1.5rem;
-    height: 3rem;
+    text-justify: justify;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-.projects-item--description span{
-    display: block;
+
+.projects-item--description .techs > span{
+    padding: 0rem 0.5rem;
+    font-size: 12px;
+    border: solid #51005c 1px;
+    border-radius: 30px;
+    margin: 0.3rem 0.5rem;
+    line-height: 1.3rem;
+    font-size: 10px;
+    font-weight: light;
+    text-decoration: none;
+
 }
 
-.projects-item--description :first-child{
+.projects-item--description .techs{
+    margin: 0.8rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-item--title{
     font-size: 1.3rem;
     display: block;
     font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.projects-item--navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.git-btn{
+    text-decoration: none;
+    padding: 0.3rem 0.5rem; 
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    justify-content: center;
+    background-color: #51005c;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 0.9rem !important;
+}
+
+.git{
+    width: 1.5rem;
+    background-color: #ffffff;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-mask-image: url(../imgs/HeroIcons/Github-icon.svg);
+    mask-image: url(../imgs/HeroIcons/Github-icon.svg);
+}
+
+.inative{
+    cursor: default;
+    opacity: 0.5;
 }
 
 .educationCard{
@@ -306,7 +390,7 @@ header span{
 
 #card-01-ico{
     -webkit-mask-image: url(../imgs/Icons/graduate.svg);
-    mask-image: url(../imgs/icons/graduate.svg);
+    mask-image: url(../imgs/Icons/graduate.svg);
 }
 
 #card-02-ico{
@@ -315,7 +399,7 @@ header span{
 }
 
 #card-03-ico, #card-04-ico{
-    -webkit-mask-image: url(../imgs/icons/chalkboard.svg);
+    -webkit-mask-image: url(../imgs/Icons/chalkboard.svg);
     mask-image: url(../imgs/Icons/chalkboard.svg);
 }
 
